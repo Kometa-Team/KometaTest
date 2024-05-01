@@ -11,6 +11,8 @@ title: Home
 </style>
 
 <center>
+
+OMGIMADETHISWORDUP THISWORDDOESNOTEXIST SOHJIROMAKETHEGUI FORTHELOVEOFGOD
 ![Logo](assets/logo-full.png)
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/Kometa-Team/Kometa?style=plastic)](https://github.com/Kometa-Team/Kometa/releases)
