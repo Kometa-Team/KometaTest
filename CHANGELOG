@@ -14,5 +14,6 @@ Changed streaming defaults to use names as their keys vs their TMDb IDs as keys
 # Bug Fixes
 Catch bad ID data from Plex
 Fixes `- git` file calls
+Ignore empty Environment Variables
 
 Various other Minor Fixes
