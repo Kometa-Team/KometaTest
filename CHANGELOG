@@ -3,7 +3,7 @@
 # Removed Features
 
 # New Features
-Added `overlay_filetype` and `overlay_quality` settings to control the filetype and quality of overlay images.
+Added `overlay_filetype` and `overlay_quality` settings to control the filetype and quality of overlay images. Users can select from JPG, PNG and WEBP.
 
 # Updates
 
