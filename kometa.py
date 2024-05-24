@@ -3,6 +3,7 @@ from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
 from datetime import datetime
 from modules.logs import MyLogger
+from modules.request import Requests, parse_version
 
 if sys.version_info[0] != 3 or sys.version_info[1] < 8:
     print("Version Error: Version: %s.%s.%s incompatible please use Python 3.8+" % (sys.version_info[0], sys.version_info[1], sys.version_info[2]))
@@ -50,6 +51,7 @@ arguments = {
     "trace": {"args": "tr", "type": "bool", "help": "Run with extra Trace Debug Logs"},
     "log-requests": {"args": ["lr", "log-request"], "type": "bool", "help": "Run with all Requests printed"},
     "timeout": {"args": "ti", "type": "int", "default": 180, "help": "Kometa Global Timeout (Default: 180)"},
+    "no-verify-ssl": {"args": "nv", "type": "bool", "help": "Turns off Global SSL Verification"},
     "collections-only": {"args": ["co", "collection-only"], "type": "bool", "help": "Run only collection files"},
     "metadata-only": {"args": ["mo", "metadatas-only"], "type": "bool", "help": "Run only metadata files"},
     "playlists-only": {"args": ["po", "playlist-only"], "type": "bool", "help": "Run only playlist files"},
@@ -223,15 +225,13 @@ def new_send(*send_args, **kwargs):
 
 requests.Session.send = new_send
 
-version = ("Unknown", "Unknown", 0)
+file_version = ("Unknown", "Unknown", 0)
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "VERSION")) as handle:
     for line in handle.readlines():
         line = line.strip()
         if len(line) > 0:
-            version = util.parse_version(line)
+            file_version = parse_version(line)
             break
-branch = util.guess_branch(version, env_version, git_branch)
-version = (version[0].replace("develop", branch), version[1].replace("develop", branch), version[2])
 
 uuid_file = os.path.join(default_dir, "UUID")
 uuid_num = None
@@ -273,13 +273,13 @@ def start(attrs):
         system_ver = "Docker"
     else:
         system_ver = f"Python {platform.python_version()}"
-    logger.info(f"    Version: {version[0]} ({system_ver}){f' (Git: {git_branch})' if git_branch else ''}")
-    latest_version = util.current_version(version, branch=branch)
-    new_version = latest_version[0] if latest_version and (version[1] != latest_version[1] or (version[2] and version[2] < latest_version[2])) else None
-    if new_version:
-        logger.info(f"    Newest Version: {new_version}")
+    my_requests = Requests(file_version, env_version, git_branch, verify_ssl=False if run_args["no_verify_ssl"] else True)
+    logger.info(f"    Version: {my_requests.version[0]} ({system_ver}){f' (Git: {git_branch})' if git_branch else ''}")
+    if my_requests.new_version:
+        logger.info(f"    Newest Version: {my_requests.new_version}")
     logger.info(f"    Platform: {platform.platform()}")
     logger.info(f"    Memory: {round(psutil.virtual_memory().total / (1024.0 ** 3))} GB")
+    logger.info(f"    Memory: {round(psutil.virtual_memory().available / (1024.0 ** 3))} GB")
     if not is_docker and not is_linuxserver:
         try:
             with open(os.path.abspath(os.path.join(os.path.dirname(__file__), "requirements.txt")), "r") as file:
@@ -298,8 +298,6 @@ def start(attrs):
     if "time" not in attrs:
         attrs["time"] = start_time.strftime("%H:%M")
     attrs["time_obj"] = start_time
-    attrs["version"] = version
-    attrs["branch"] = branch
     attrs["config_file"] = run_args["config"]
     attrs["ignore_schedules"] = run_args["ignore-schedules"]
     attrs["read_only"] = run_args["read-only-config"]
@@ -328,7 +326,7 @@ def start(attrs):
     config = None
     stats = {"created": 0, "modified": 0, "deleted": 0, "added": 0, "unchanged": 0, "removed": 0, "radarr": 0, "sonarr": 0, "names": []}
     try:
-        config = ConfigFile(default_dir, attrs, secret_args)
+        config = ConfigFile(my_requests, default_dir, attrs, secret_args)
     except Exception as e:
         logger.stacktrace()
         logger.critical(e)
@@ -348,9 +346,9 @@ def start(attrs):
         except Failed as e:
             logger.stacktrace()
             logger.error(f"Webhooks Error: {e}")
-    version_line = f"Version: {version[0]}"
-    if new_version:
-        version_line = f"{version_line}        Newest Version: {new_version}"
+    version_line = f"Version: {my_requests.version[0]}"
+    if my_requests.new_version:
+        version_line = f"{version_line}        Newest Version: {my_requests.new_version}"
     try:
         log_data = {}
         no_overlays = []

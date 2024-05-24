@@ -1,7 +1,7 @@
 import os, re
 from datetime import datetime, timedelta, timezone
 from modules import plex, util, anidb
-from modules.util import Failed, LimitReached, YAML
+from modules.util import Failed, LimitReached
 from plexapi.exceptions import NotFound
 from plexapi.video import Movie, Show
 
@@ -1134,7 +1134,7 @@ class Operations:
             yaml = None
             if os.path.exists(self.library.metadata_backup["path"]):
                 try:
-                    yaml = YAML(path=self.library.metadata_backup["path"])
+                    yaml = self.config.Requests.file_yaml(self.library.metadata_backup["path"])
                 except Failed as e:
                     logger.error(e)
                     filename, file_extension = os.path.splitext(self.library.metadata_backup["path"])
@@ -1144,7 +1144,7 @@ class Operations:
                     os.rename(self.library.metadata_backup["path"], f"{filename}{i}{file_extension}")
                     logger.error(f"Backup failed to load saving copy to {filename}{i}{file_extension}")
             if not yaml:
-                yaml = YAML(path=self.library.metadata_backup["path"], create=True)
+                yaml = self.config.Requests.file_yaml(self.library.metadata_backup["path"], create=True)
             if "metadata" not in yaml.data or not isinstance(yaml.data["metadata"], dict):
                 yaml.data["metadata"] = {}
             special_names = {}

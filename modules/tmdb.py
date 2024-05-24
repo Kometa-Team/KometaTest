@@ -215,13 +215,14 @@ class TMDbEpisode:
 class TMDb:
     def __init__(self, config, params):
         self.config = config
+        self.requests = self.config.Requests
         self.apikey = params["apikey"]
         self.language = params["language"]
         self.region = None
         self.expiration = params["expiration"]
         logger.secret(self.apikey)
         try:
-            self.TMDb = TMDbAPIs(self.apikey, language=self.language, session=self.config.session)
+            self.TMDb = TMDbAPIs(self.apikey, language=self.language, session=self.requests.session)
         except TMDbException as e:
             raise Failed(f"TMDb Error: {e}")
         self.iso_3166_1 = {iso: i.name for iso, i in self.TMDb._iso_3166_1.items()} # noqa

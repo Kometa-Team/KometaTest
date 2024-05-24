@@ -6,11 +6,11 @@ from modules import anidb, anilist, icheckmovies, imdb, letterboxd, mal, mojo, p
 from modules.util import Failed, FilterFailed, NonExisting, NotScheduled, NotScheduledRange, Deleted
 from modules.overlay import Overlay
 from modules.poster import KometaImage
+from modules.request import quote
 from plexapi.audio import Artist, Album, Track
 from plexapi.exceptions import NotFound
 from plexapi.video import Movie, Show, Season, Episode
 from requests.exceptions import ConnectionError
-from urllib.parse import quote
 
 logger = util.logger
 
@@ -3449,8 +3449,8 @@ class CollectionBuilder:
             elif style_data and "tpdb_background" in style_data and style_data["tpdb_background"]:
                 self.backgrounds["style_data"] = f"https://theposterdb.com/api/assets/{style_data['tpdb_background']}"
 
-        self.collection_poster = util.pick_image(self.obj.title, self.posters, self.library.prioritize_assets, self.library.download_url_assets, asset_location)
-        self.collection_background = util.pick_image(self.obj.title, self.backgrounds, self.library.prioritize_assets, self.library.download_url_assets, asset_location, is_poster=False)
+        self.collection_poster = self.library.pick_image(self.obj.title, self.posters, self.library.prioritize_assets, self.library.download_url_assets, asset_location)
+        self.collection_background = self.library.pick_image(self.obj.title, self.backgrounds, self.library.prioritize_assets, self.library.download_url_assets, asset_location, is_poster=False)
 
         clean_temp = False
         if isinstance(self.collection_poster, KometaImage):
