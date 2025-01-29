@@ -17,27 +17,27 @@ Plex does not support creating these empty collections natively through its UI, 
 These are all the files that contain a separator 
 
 | Collection Name               | Default File        |
-|-------------------------------|:--------------------|
-| Seasonal Collections          | `seasonal`          |
-| Chart Collections             | `separator_chart`   |
-| Universe Collections          | `universe`          |
-| Streaming Collections         | `streaming`         |
-| Network Collections           | `network`           |
-| Genre Collections             | `genre`             |
-| Studio Collections            | `studio`            |
-| Country Collections           | `country`           |
+| ----------------------------- | :------------------ |
+| Actors Collections            | `actor`             |
 | Audio Language Collections    | `audio_language`    |
-| Subtitle Language Collections | `subtitle_language` |
+| Award Collections             | `separator_award`   |
+| Based On... Collections       | `based`             |
+| Chart Collections             | `separator_chart`   |
+| Country Collections           | `country`           |
 | Decade Collections            | `decade`            |
-| Year Collections              | `year`              |
+| Directors Collections         | `director`          |
+| Genre Collections             | `genre`             |
+| Network Collections           | `network`           |
+| Producers Collections         | `producer`          |
 | Ratings Collections           | `content_rating*`   |
 | Resolution Collections        | `resolution*`       |
-| Award Collections             | `separator_award`   |
-| Actors Collections            | `actor`             |
-| Directors Collections         | `director`          |
-| Producers Collections         | `producer`          |
+| Seasonal Collections          | `seasonal`          |
+| Streaming Collections         | `streaming`         |
+| Studio Collections            | `studio`            |
+| Subtitle Language Collections | `subtitle_language` |
+| Universe Collections          | `universe`          |
 | Writers Collections           | `writer`            |
-| Based On... Collections       | `based`             |
+| Year Collections              | `year`              |
 
 ## Shared Separator Variables
 
@@ -82,29 +82,29 @@ Multiple styles are available for Separators, to match Plex's "categories" featu
 The available styles available are:
 
 | Style    | Value      |
-|:---------|:-----------|
-| Original | `orig`     |  
-| Amethyst | `amethyst` |  
-| Aqua     | `aqua`     |   
-| Blue     | `blue`     |  
-| Forest   | `forest`   | 
+| :------- | :--------- |
+| Amethyst | `amethyst` |
+| Aqua     | `aqua`     |
+| Blue     | `blue`     |
+| Brown    | `stb`      |
+| Forest   | `forest`   |
 | Fuchsia  | `fuchsia`  |
-| Gold     | `gold`     |   
-| Gray     | `gray`     |  
-| Green    | `green`    |   
-| Navy     | `navy`     |  
-| Ocean    | `ocean`    | 
+| Gold     | `gold`     |
+| Gray     | `gray`     |
+| Green    | `green`    |
+| Navy     | `navy`     |
+| Ocean    | `ocean`    |
 | Olive    | `olive`    |
-| Orchid   | `orchid`   |   
-| Pink     | `pink`     |  
-| Plum     | `plum`     |   
-| Purple   | `purple`   |  
-| Red      | `red`      | 
+| Orchid   | `orchid`   |
+| Original | `orig`     |
+| Pink     | `pink`     |
+| Plum     | `plum`     |
+| Purple   | `purple`   |
+| Red      | `red`      |
 | Rust     | `rust`     |
-| Salmon   | `salmon`   |   
-| Sand     | `sand`     |  
-| Brown    | `stb`      |   
-| Tan      | `tan`      |  
+| Salmon   | `salmon`   |
+| Sand     | `sand`     |
+| Tan      | `tan`      |
 
 This image shows an example separator in each of the above styles
 

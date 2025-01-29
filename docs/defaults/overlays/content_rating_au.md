@@ -19,15 +19,15 @@ Rating.
 
 ## Supported Content Rating AU
 
-| Rating | Key   |
-|:-------|:------|
-| G      | `g`   |
-| PG     | `pg`  |
-| M      | `m`   |
-| MA15+  | `ma`  |
-| R18+   | `r`   |
-| X18+   | `x`   |
-| NR     | `nr`  |
+| Rating | Key  |
+| :----- | :--- |
+| G      | `g`  |
+| M      | `m`  |
+| MA15+  | `ma` |
+| NR     | `nr` |
+| PG     | `pg` |
+| R18+   | `r`  |
+| X18+   | `x`  |
 
 ## Config
 
@@ -76,15 +76,15 @@ work. Any value not specified will use its default value if it has one if not it
     === "File-Specific Template Variables"
 
         | Variable         | Description & Values                                                                                                                        |
-        |:-----------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
-        | `color`          | **Description:** Color version of the content rating images<br>**Default:**`` Set to `false` if you want b&w version.                       |
-        | `back_color`     | **Description:** Choose the back color in RGBA for the overlay lozenge.<br>**Default:**`#00000099`                                          |
-        | `back_radius`    | **Description:** Choose the back radius for the overlay lozenge.<br>**Default:**`30`                                                        |
-        | `back_width`     | **Description:** Choose the back width for the overlay lozenge.<br>**Default:**`305`                                                        |
-        | `back_height`    | **Description:** Choose the back height for the overlay lozenge.<br>**Default:**`105`                                                       |
+        | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
         | `addon_offset`   | **Description:** Text Addon Image Offset from the text.<br>**Default:** `15`<br>**Values:** Any number greater than 0                       |
         | `addon_position` | **Description:** Text Addon Image Alignment in relation to the text.<br>**Default:** `left`<br>**Values:** `left`, `right`, `top`, `bottom` |
+        | `back_color`     | **Description:** Choose the back color in RGBA for the overlay lozenge.<br>**Default:**`#00000099`                                          |
+        | `back_height`    | **Description:** Choose the back height for the overlay lozenge.<br>**Default:**`105`                                                       |
+        | `back_radius`    | **Description:** Choose the back radius for the overlay lozenge.<br>**Default:**`30`                                                        |
+        | `back_width`     | **Description:** Choose the back width for the overlay lozenge.<br>**Default:**`305`                                                        |
         | `builder_level`  | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode`                                                             |
+        | `color`          | **Description:** Color version of the content rating images<br>**Default:**`` Set to `false` if you want b&w version.                       |
 
     === "Overlay Template Variables"
 

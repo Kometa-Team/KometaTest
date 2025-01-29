@@ -17,16 +17,16 @@ Recommendations: Designed for [TRaSH Guides](https://trash-guides.info/) filenam
 
 ## Supported Video Formats
 
-| Video Format   | Key        | Weight |
-|:---------------|:-----------|:-------|
-| REMUX          | `remux`    | `60`   |
-| BLU-RAY        | `bluray`   | `50`   |
-| WEB            | `web`      | `40`   |
-| HDTV           | `hdtv`     | `30`   |
-| DVD            | `dvd`      | `20`   |
-| SDTV           | `sdtv`     | `10`   |
-| TELESYNC       | `telesync` | `9`    |
-| CAM            | `cam`      | `8`    |
+| Video Format | Key        | Weight |
+| :----------- | :--------- | :----- |
+| BLU-RAY      | `bluray`   | `50`   |
+| CAM          | `cam`      | `8`    |
+| DVD          | `dvd`      | `20`   |
+| HDTV         | `hdtv`     | `30`   |
+| REMUX        | `remux`    | `60`   |
+| SDTV         | `sdtv`     | `10`   |
+| TELESYNC     | `telesync` | `9`    |
+| WEB          | `web`      | `40`   |
 
 ## Config
 
@@ -81,10 +81,10 @@ work. Any value not specified will use its default value if it has one if not it
 
         | Variable                     | Description & Values                                                                                                                                                                                                                                                                                                                                                                                         |
         |:-----------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-        | `builder_level`              | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode`                                                                                                                                                                                                                                                                                                                              |
-        | `text_<<key>>`<sup>1</sup>   | **Description:** Choose the text for the Overlay.<br>**Default:** <table class="clearTable"><tr><th>Key</th><th>Default</th></tr><tr><td>`remux`</td><td>`REMUX`</td></tr><tr><td>`bluray`</td><td>`BLU-RAY`</td></tr><tr><td>`web`</td><td>`WEB`</td></tr><tr><td>`hdtv`</td><td>`HDTV`</td></tr><tr><td>`dvd`</td><td>`DVD`</td></tr><tr><td>`sdtv`</td><td>`SDTV`</td></tr></table>**Values:** Any String |
-        | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number                                                                                                                                                                                                                                                                                                 |
-        | `regex_<<key>>`<sup>1</sup>  | **Description:** Controls the regex of the Overlay Search.<br>**Values:** Any Proper Regex                                                                                                                                                                                                                                                                                                                   |
+        | `builder_level` | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode` |
+        | `regex_<<key>>`<sup>1</sup> | **Description:** Controls the regex of the Overlay Search.<br>**Values:** Any Proper Regex |
+        | `text_<<key>>`<sup>1</sup> | **Description:** Choose the text for the Overlay.<br>**Default:** <table class="clearTable"><tr><th>Key</th><th>Default</th></tr><tr><td>`remux`</td><td>`REMUX`</td></tr><tr><td>`bluray`</td><td>`BLU-RAY`</td></tr><tr><td>`web`</td><td>`WEB`</td></tr><tr><td>`hdtv`</td><td>`HDTV`</td></tr><tr><td>`dvd`</td><td>`DVD`</td></tr><tr><td>`sdtv`</td><td>`SDTV`</td></tr></table>**Values:** Any String |
+        | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number |
 
         1. Each default overlay has a `key` that when calling to effect a specific overlay you must replace `<<key>>` 
         with when calling.

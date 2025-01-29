@@ -18,9 +18,9 @@ Supported Library Types: Movie
 ## <a id="collection_section"></a>Collections Section 100
 
 | Collection                                           | Key                               | Description                                                                    |
-|:-----------------------------------------------------|:----------------------------------|:-------------------------------------------------------------------------------|
-| `Decade Collections`                                 | `separator`                       | [Separator Collection](../separators.md) to denote the Section of Collections. |
+| :--------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------- |
 | `Best of <<Decade>>`<br>**Example:** `Best of 2020s` | `<<Year>>`<br>**Example:** `2020` | Collection of Movies released in this Decade.                                  |
+| `Decade Collections`                                 | `separator`                       | [Separator Collection](../separators.md) to denote the Section of Collections. |
 
 ## Config
 
@@ -52,15 +52,15 @@ work. Any value not specified will use its default value if it has one if not it
 
     === "File-Specific Template Variables"
 
-        | Variable                      | Description & Values                                                                                                                                                                                                    |
-        |:------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-        | `limit`                       | **Description:** Changes the Builder Limit for all collections in a Defaults File.<br>**Default:** `100`<br>**Values:** Number Greater than 0                                                                           |
-        | `limit_<<key>>`<sup>1</sup>   | **Description:** Changes the Builder Limit of the [key's](#collection_section) collection.<br>**Default:** `limit`<br>**Values:** Number Greater than 0                                                                              |
+        | Variable                      | Description & Values                                                                                                                                                                                                   |
+        | :---------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | `exclude`                     | **Description:** Exclude these Decades from creating a Dynamic Collection.<br>**Values:** List of Decades found in your library                                                                                        |
+        | `limit_<<key>>`<sup>1</sup>   | **Description:** Changes the Builder Limit of the [key's](#collection_section) collection.<br>**Default:** `limit`<br>**Values:** Number Greater than 0                                                                |
+        | `limit`                       | **Description:** Changes the Builder Limit for all collections in a Defaults File.<br>**Default:** `100`<br>**Values:** Number Greater than 0                                                                          |
+        | `name_format`                 | **Description:** Changes the title format of the Dynamic Collections.<br>**Default:** `Best of <<key_name>>`<br>**Values:** Any string with `<<key_name>>` in it.                                                      |
+        | `sort_by_<<key>>`<sup>1</sup> | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)    |
         | `sort_by`                     | **Description:** Changes the Smart Filter Sort for all collections in a Defaults File.<br>**Default:** `critic_rating.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options) |
-        | `sort_by_<<key>>`<sup>1</sup> | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                 |
-        | `exclude`                     | **Description:** Exclude these Decades from creating a Dynamic Collection.<br>**Values:** List of Decades found in your library                                                                                         |
-        | `name_format`                 | **Description:** Changes the title format of the Dynamic Collections.<br>**Default:** `Best of <<key_name>>`<br>**Values:** Any string with `<<key_name>>` in it.                                                       |
-        | `summary_format`              | **Description:** Changes the summary format of the Dynamic Collections.<br>**Default:** `Top <<limit>> <<library_translation>>s of the <<key_name>>.`<br>**Values:** Any string.                                        |
+        | `summary_format`              | **Description:** Changes the summary format of the Dynamic Collections.<br>**Default:** `Top <<limit>> <<library_translation>>s of the <<key_name>>.`<br>**Values:** Any string.                                       |
 
         1. Each default collection has a [`key`](#collection_section) that you must replace `<<key>>` with when using 
         this Template Variable. These keys are found in the table at the top of this page.

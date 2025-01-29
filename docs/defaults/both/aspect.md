@@ -15,8 +15,7 @@ Supported Library Types: Movie, Show
 ## <a id="collection_section"></a>Collections Section 125
 
 | Collection                     | Key         | Description                                                                    |
-|:-------------------------------|:------------|:-------------------------------------------------------------------------------|
-| `Aspect Ratio  Collections`    | `separator` | [Separator Collection](../separators.md) to denote the Section of Collections. |
+| :----------------------------- | :---------- | :----------------------------------------------------------------------------- |
 | `1.33 - Academy Aperture`      | `1.33`      | Collection of Movies/Shows with a 1.33 aspect ratio                            |
 | `1.65 - Early Widescreen`      | `1.65`      | Collection of Movies/Shows with a 1.65 aspect ratio                            |
 | `1.66 - European Widescreen`   | `1.66`      | Collection of Movies/Shows with a 1.66 aspect ratio                            |
@@ -25,6 +24,7 @@ Supported Library Types: Movie, Show
 | `2.2 - 70mm Frame`             | `2.2`       | Collection of Movies/Shows with a 2.2 aspect ratio                             |
 | `2.35 - Anamorphic Projection` | `2.35`      | Collection of Movies/Shows with a 2.35 aspect ratio                            |
 | `2.77 - Cinerama`              | `2.77`      | Collection of Movies/Shows with a 2.77 aspect ratio                            |
+| `Aspect Ratio Collections`     | `separator` | [Separator Collection](../separators.md) to denote the Section of Collections. |
 
 ## Config
 
@@ -59,17 +59,17 @@ work. Any value not specified will use its default value if it has one if not it
 
     === "File-Specific Template Variables"
 
-        | Variable                        | Description & Values                                                                                                                                                                                                                                                                             |
-        |:--------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-        | `limit`                         | **Description:** Changes the Builder Limit for all collections in a Defaults File.<br>**Values:** Number Greater than 0                                                                                                                                                                          |
+        | Variable                        | Description & Values                                                                                                                                                                                                                                                                                          |
+        | :------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+        | `exclude`                       | **Description:** Exclude these Media Outlets from creating a Dynamic Collection.<br>**Values:** List of Media Outlet Keys                                                                                                                                                                                     |
         | `limit_<<key>>`<sup>1</sup>     | **Description:** Changes the Builder Limit of the [key's](#collection_section) collection.<br>**Default:** `limit`<br>**Values:** Number Greater than 0                                                                                                                                                       |
-        | `sort_by`                       | **Description:** Changes the Smart Filter Sort for all collections in a Defaults File.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                                                |
-        | `sort_by_<<key>>`<sup>1</sup>   | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                                                          |
-        | `sync_mode`                     | **Description:** Changes the Sync Mode for all collections in a Defaults File.<br>**Default:** `sync`<br>**Values:**<table class="clearTable"><tr><td>`sync`</td><td>Add and Remove Items based on Builders</td></tr><tr><td>`append`</td><td>Only Add Items based on Builders</td></tr></table> |
+        | `limit`                         | **Description:** Changes the Builder Limit for all collections in a Defaults File.<br>**Values:** Number Greater than 0                                                                                                                                                                                       |
+        | `name_format`                   | **Description:** Changes the title format of the Dynamic Collections.<br>**Default:** `Based on a <<key_name>>`<br>**Values:** Any string with `<<key_name>>` in it.                                                                                                                                          |
+        | `sort_by_<<key>>`<sup>1</sup>   | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                                                           |
+        | `sort_by`                       | **Description:** Changes the Smart Filter Sort for all collections in a Defaults File.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                                                              |
+        | `summary_format`                | **Description:** Changes the summary format of the Dynamic Collections.<br>**Default:** `<<library_translationU>>s based on or inspired by <<translated_key_name>>s.`<br>**Values:** Any string.                                                                                                              |
         | `sync_mode_<<key>>`<sup>1</sup> | **Description:** Changes the Sync Mode of the [key's](#collection_section) collection.<br>**Default:** `sync_mode`<br>**Values:**<table class="clearTable"><tr><td>`sync`</td><td>Add and Remove Items based on Builders</td></tr><tr><td>`append`</td><td>Only Add Items based on Builders</td></tr></table> |
-        | `exclude`                       | **Description:** Exclude these Media Outlets from creating a Dynamic Collection.<br>**Values:** List of Media Outlet Keys                                                                                                                                                                        |
-        | `name_format`                   | **Description:** Changes the title format of the Dynamic Collections.<br>**Default:** `Based on a <<key_name>>`<br>**Values:** Any string with `<<key_name>>` in it.                                                                                                                             |
-        | `summary_format`                | **Description:** Changes the summary format of the Dynamic Collections.<br>**Default:** `<<library_translationU>>s based on or inspired by <<translated_key_name>>s.`<br>**Values:** Any string.                                                                                                 |
+        | `sync_mode`                     | **Description:** Changes the Sync Mode for all collections in a Defaults File.<br>**Default:** `sync`<br>**Values:**<table class="clearTable"><tr><td>`sync`</td><td>Add and Remove Items based on Builders</td></tr><tr><td>`append`</td><td>Only Add Items based on Builders</td></tr></table>              |
 
         1. Each default collection has a [`key`](#collection_section) that you must replace `<<key>>` with when using 
         this Template Variable. These keys are found in the table at the top of this page.

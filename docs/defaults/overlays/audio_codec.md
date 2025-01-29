@@ -18,23 +18,23 @@ Recommendations: Designed for [TRaSH Guides](https://trash-guides.info/) filenam
 ## Supported Audio Codecs
 
 | Audio Codec            | Key            | Weight |
-|:-----------------------|:---------------|:-------|
-| Dolby TrueHD Atmos     | `truehd_atmos` | `160`  |
-| DTS-X                  | `dtsx`         | `150`  |
-| Dolby Digital+ / E-AC3 | `plus_atmos`   | `140`  |
-| Dolby Atmos            | `dolby_atmos`  | `130`  |
-| Dolby TrueHD           | `truehd`       | `120`  |
-| DTS-HD-MA              | `ma`           | `110`  |
-| FLAC                   | `flac`         | `100`  |
-| PCM                    | `pcm`          | `90`   |
-| DTS-HD-HRA             | `hra`          | `80`   |
-| Dolby Digital+         | `plus`         | `70`   |
-| DTS-ES                 | `dtses`        | `60`   |
-| DTS                    | `dts`          | `50`   |
-| Dolby Digital          | `digital`      | `40`   |
+| :--------------------- | :------------- | :----- |
 | AAC                    | `aac`          | `30`   |
+| Dolby Atmos            | `dolby_atmos`  | `130`  |
+| Dolby Digital          | `digital`      | `40`   |
+| Dolby Digital+         | `plus`         | `70`   |
+| Dolby Digital+ / E-AC3 | `plus_atmos`   | `140`  |
+| Dolby TrueHD           | `truehd`       | `120`  |
+| Dolby TrueHD Atmos     | `truehd_atmos` | `160`  |
+| DTS                    | `dts`          | `50`   |
+| DTS-ES                 | `dtses`        | `60`   |
+| DTS-HD-HRA             | `hra`          | `80`   |
+| DTS-HD-MA              | `ma`           | `110`  |
+| DTS-X                  | `dtsx`         | `150`  |
+| FLAC                   | `flac`         | `100`  |
 | MP3                    | `mp3`          | `20`   |
 | Opus                   | `opus`         | `10`   |
+| PCM                    | `pcm`          | `90`   |
 
 ### Standard Style
 
@@ -92,11 +92,11 @@ work. Any value not specified will use its default value if it has one if not it
     === "File-Specific Template Variables"
 
         | Variable                     | Description & Values                                                                                         |
-        |:-----------------------------|:-------------------------------------------------------------------------------------------------------------|
-        | `style`                      | **Description:** Choose the Overlay Style.<br>**Default:** `compact`<br>**Values:** `compact` or `standard`  |
+        | :--------------------------- | :----------------------------------------------------------------------------------------------------------- |
         | `builder_level`              | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode`                              |
-        | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number |
         | `regex_<<key>>`<sup>1</sup>  | **Description:** Controls the regex of the Overlay Search.<br>**Values:** Any Proper Regex                   |
+        | `style`                      | **Description:** Choose the Overlay Style.<br>**Default:** `compact`<br>**Values:** `compact` or `standard`  |
+        | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number |
 
         1. Each default overlay has a `key` that when calling to effect a specific overlay you must replace `<<key>>` 
         with when calling.

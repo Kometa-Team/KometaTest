@@ -16,7 +16,7 @@ Supported Overlay Level: Movie, Show, Season, Episode
 ## Supported Audio/Subtitle Languages
 
 | Audio/Subtitle Languages | Key     | Weight |
-|:-------------------------|:--------|:-------|
+| :----------------------- | :------ | :----- |
 | Dual                     | `dual`  | `20`   |
 | Multi                    | `multi` | `10`   |
 
@@ -70,10 +70,10 @@ work. Any value not specified will use its default value if it has one if not it
     === "File-Specific Template Variables"
 
         | Variable                     | Description & Values                                                                                                                                                           |
-        |:-----------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-        | `use_subtitles`              | **Description:** Controls if the overlay is based on subtitle language instead of audio language.<br>**Values:** `true` to look at subtitle language instead of audio language |
-        | `minimum`                    | **Description:** Choose the minimum for the `multi` Overlay.<br>**Default:** `2` <br>**Values:** Any Number                                                                    |
+        | :--------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
         | `builder_level`              | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode`                                                                                                |
+        | `minimum`                    | **Description:** Choose the minimum for the `multi` Overlay.<br>**Default:** `2` <br>**Values:** Any Number                                                                    |
+        | `use_subtitles`              | **Description:** Controls if the overlay is based on subtitle language instead of audio language.<br>**Values:** `true` to look at subtitle language instead of audio language |
         | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number                                                                   |
 
         1. Each default overlay has a `key` that when calling to effect a specific overlay you must replace `<<key>>` 

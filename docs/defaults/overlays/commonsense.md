@@ -20,16 +20,8 @@ update Plex to the Common Sense Rating.
 ## Supported Common Sense Age Rating
 
 | Rating | Key  |
-|:-------|:-----|
+| :----- | :--- |
 | 1+     | `1`  |
-| 2+     | `2`  |
-| 3+     | `3`  |
-| 4+     | `4`  |
-| 5+     | `5`  |
-| 6+     | `6`  |
-| 7+     | `7`  |
-| 8+     | `8`  |
-| 9+     | `9`  |
 | 10+    | `10` |
 | 11+    | `11` |
 | 12+    | `12` |
@@ -39,6 +31,14 @@ update Plex to the Common Sense Rating.
 | 16+    | `16` |
 | 17+    | `17` |
 | 18+    | `18` |
+| 2+     | `2`  |
+| 3+     | `3`  |
+| 4+     | `4`  |
+| 5+     | `5`  |
+| 6+     | `6`  |
+| 7+     | `7`  |
+| 8+     | `8`  |
+| 9+     | `9`  |
 | NR     | `nr` |
 
 ## Config
@@ -91,14 +91,14 @@ work. Any value not specified will use its default value if it has one if not it
     === "File-Specific Template Variables"
 
         | Variable         | Description & Values                                                                                                                        |
-        |:-----------------|:--------------------------------------------------------------------------------------------------------------------------------------------|
+        | :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
         | `addon_offset`   | **Description:** Text Addon Image Offset from the text.<br>**Default:** `15`<br>**Values:** Any number greater than 0                       |
         | `addon_position` | **Description:** Text Addon Image Alignment in relation to the text.<br>**Default:** `left`<br>**Values:** `left`, `right`, `top`, `bottom` |
-        | `pre_text`       | **Description:** Choose the text before the key for the Overlay.<br>**Values:** Any String                                                  |
+        | `builder_level`  | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode`                                                             |
+        | `post_nr_text`   | **Description:** Choose the text after the `nr` key for the Overlay.<br>**Values:** Any String                                              |
         | `post_text`      | **Description:** Choose the text after the key for the Overlay.<br>**Default:** `+`<br>**Values:** Any String                               |
         | `pre_nr_text`    | **Description:** Choose the text before the `nr` key for the Overlay.<br>**Values:** Any String                                             |
-        | `post_nr_text`   | **Description:** Choose the text after the `nr` key for the Overlay.<br>**Values:** Any String                                              |
-        | `builder_level`  | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode`                                                             |
+        | `pre_text`       | **Description:** Choose the text before the key for the Overlay.<br>**Values:** Any String                                                  |
 
     === "Overlay Template Variables"
 

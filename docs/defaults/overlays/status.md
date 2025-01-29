@@ -18,11 +18,11 @@ Supported Overlay Level: Show
 ## Supported Status
 
 | Status    | Key         | Weight |
-|:----------|:------------|:-------|
+| :-------- | :---------- | :----- |
 | AIRING    | `airing`    | `40`   |
-| RETURNING | `returning` | `30`   |
 | CANCELED  | `canceled`  | `20`   |
 | ENDED     | `ended`     | `10`   |
+| RETURNING | `returning` | `30`   |
 
 ## Config
 
@@ -67,7 +67,7 @@ work. Any value not specified will use its default value if it has one if not it
     === "File-Specific Template Variables"
 
         | Variable                     | Description & Values                                                                                                                                                                                                                                                                                                                                |
-        |:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+        | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
         | `last`                       | **Description:** Episode Air Date in the last number of days for the AIRING Overlay.<br>**Default:** `14`<br>**Values:** Any number greater than 0                                                                                                                                                                                                  |
         | `text_<<key>>`<sup>1</sup>   | **Description:** Choose the text for the Overlay.<br>**Default:** <table class="clearTable"><tr><th>Key</th><th>Default</th></tr><tr><td>`airing`</td><td>`AIRING`</td></tr><tr><td>`returning`</td><td>`RETURNING`</td></tr><tr><td>`canceled`</td><td>`CANCELED`</td></tr><tr><td>`ended`</td><td>`ENDED`</td></tr></table>**Values:** Any String |
         | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number                                                                                                                                                                                                                                        |

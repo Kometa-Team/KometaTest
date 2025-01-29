@@ -16,25 +16,25 @@ Supported Overlay Level: Movie, Show
 ## Supported Streaming Services
 
 | Streaming Service | Key           | Weight |
-|:------------------|:--------------|:-------|
-| Netflix           | `netflix`     | `160`  |
-| Prime Video       | `amazon`      | `150`  |
-| Disney+           | `disney`      | `140`  |
-| Max               | `max`         | `130`  |
-| Crunchyroll       | `Crunchyroll` | `120`  |
-| YouTube           | `youtube`     | `110`  |
-| Hulu              | `hulu`        | `100`  |
-| Paramount+        | `paramount`   | `90`   |
-| AppleTV           | `appletv`     | `80`   |
-| Peacock           | `peacock`     | `70`   |
-| Showtime          | `showtime`    | `60`   |
-| discovery+        | `discovery`   | `58`   |
-| Crave             | `crave`       | `55`   |
-| NOW               | `now`         | `50`   |
+| :---------------- | :------------ | :----- |
 | All 4             | `all4`        | `40`   |
-| britbox           | `britbox`     | `30`   |
+| AppleTV           | `appletv`     | `80`   |
 | BET+              | `bet`         | `20`   |
+| britbox           | `britbox`     | `30`   |
+| Crave             | `crave`       | `55`   |
+| Crunchyroll       | `Crunchyroll` | `120`  |
+| discovery+        | `discovery`   | `58`   |
+| Disney+           | `disney`      | `140`  |
 | hayu              | `hayu`        | `10`   |
+| Hulu              | `hulu`        | `100`  |
+| Max               | `max`         | `130`  |
+| Netflix           | `netflix`     | `160`  |
+| NOW               | `now`         | `50`   |
+| Paramount+        | `paramount`   | `90`   |
+| Peacock           | `peacock`     | `70`   |
+| Prime Video       | `amazon`      | `150`  |
+| Showtime          | `showtime`    | `60`   |
+| YouTube           | `youtube`     | `110`  |
 
 
 ## Regional Variants
@@ -43,10 +43,10 @@ Some logic is applied to allow for regional streaming service lists to be availa
 are, as detailed below:
 
 | Region           | Key                              | Description                                                                                                                         |
-|:-----------------|:---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| any besides `GB` | `all4`, `britbox`, `hayu`, `now` | These overlays will not be used if the region is not `uk` as these streaming services are UK-focused                                |
-| any besides `CA` | `crave`                          | These overlays will not be used if the region is not `ca` as these streaming services are Canada-focused                            |
+| :--------------- | :------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `CA`             | `max`, `showtime`                | These overlays will not be used if the region is `ca` as these streaming services are part of the Crave streaming service in Canada |
+| any besides `CA` | `crave`                          | These overlays will not be used if the region is not `ca` as these streaming services are Canada-focused                            |
+| any besides `GB` | `all4`, `britbox`, `hayu`, `now` | These overlays will not be used if the region is not `uk` as these streaming services are UK-focused                                |
 
 
 ## Config
@@ -92,12 +92,12 @@ work. Any value not specified will use its default value if it has one if not it
         
     === "File-Specific Template Variables"
 
-        | Variable                     | Description & Values                                                                                                                                                                                                                                                                                                            |
-        |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-        | `region`                     | **Description:** Changes some Streaming Service lists to regional variants (see below table for more information.<br>**Default:** `US`<br>**Values:** Any [ISO 3166-1 Code](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) of the region where the streaming information should be based on.                                                                                                                   |
-        | `originals_only`             | **Description:** Changes Streaming Service overlays to only apply to original content produced by the service.<br>**Note**: Cannot be used with `region`, and only produces overlays for `amazon`, `appletv`, `disney`, `max`, `hulu`, `netflix`, `paramount`, `peacock`<br>**Default:** `false`<br>**Values:** `true`, `false` |
-        | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number                                                                                                                                                                                                                    |
-        | `discover_with_<<key>>`         | **Description:** Overrides the TMDb Watch Provider used for the specfied key. This is only needed if a specific `region` has a different ID for the watch provider.<br>**Default:** `<<discover_with>>`<br>**Values:** Any TMDb Watch Provider ID for [Movies](https://developer.themoviedb.org/reference/watch-providers-movie-list) / [Shows](https://developer.themoviedb.org/reference/watch-provider-tv-list) based on the user's region                                                                                                            |
+        | Variable                     | Description & Values                                                                                                                                                                                                                                                                                                                                                                                                                          |
+        | :--------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+        | `discover_with_<<key>>`      | **Description:** Overrides the TMDb Watch Provider used for the specfied key. This is only needed if a specific `region` has a different ID for the watch provider.<br>**Default:** `<<discover_with>>`<br>**Values:** Any TMDb Watch Provider ID for [Movies](https://developer.themoviedb.org/reference/watch-providers-movie-list) / [Shows](https://developer.themoviedb.org/reference/watch-provider-tv-list) based on the user's region |
+        | `originals_only`             | **Description:** Changes Streaming Service overlays to only apply to original content produced by the service.<br>**Note**: Cannot be used with `region`, and only produces overlays for `amazon`, `appletv`, `disney`, `max`, `hulu`, `netflix`, `paramount`, `peacock`<br>**Default:** `false`<br>**Values:** `true`, `false`                                                                                                               |
+        | `region`                     | **Description:** Changes some Streaming Service lists to regional variants (see below table for more information.<br>**Default:** `US`<br>**Values:** Any [ISO 3166-1 Code](https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) of the region where the streaming information should be based on.                                                                                                                                         |
+        | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority.<br>**Values:** Any Number                                                                                                                                                                                                                                                                                                                                  |
 
         1. Each default overlay has a `key` that when calling to effect a specific overlay you must replace `<<key>>` 
         with when calling.
