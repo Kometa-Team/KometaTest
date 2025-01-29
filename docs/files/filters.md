@@ -59,7 +59,7 @@ tags:
 
 # Filters
 
-Filters allow for you to filter every item added to the collection/overlay/playlist from every builder using the `filters` attribute. 
+Filters allow for you to filter every item added to the collection/overlay/playlist from every Builder using the `filters` attribute. 
 
 ## Using Filters
 
@@ -91,11 +91,11 @@ All filter options are listed below.
 
 To display items filtered out add `show_filtered: true` to the definition.  To display items that make it through the filters add `show_unfiltered: true` to the definition.
 
-You can use the `plex_all: true` builder to filter from your entire library.
+You can use the `plex_all: true` Builder to filter from your entire library.
 
 ???+ warning
     
-    Filters can be very slow, particularly on larger libraries. Try to build or narrow your items using a [Smart Label Collection](builders/smart.md#smart-label), [Plex Search](builders/plex.md#plex-search) or another [Builder](overview.md) if possible.
+    Filters can be very slow, particularly on larger libraries. Try to build or narrow your items using a [Smart Label Collection](builders/plex.md#smart-label), [Plex Search](builders/plex.md#plex-search) or another [Builder](overview.md) if possible.
 
 ## Filter Options
 
@@ -113,7 +113,7 @@ You can use the `plex_all: true` builder to filter from your entire library.
     | `has_dolby_vision` | Matches every item that has or does not have a dolby vision                                              | `Movies`, `Shows`<sup>**1**</sup>, `Seasons`<sup>**1**</sup>,<br>`Episodes` |
     | `has_overlay`      | Matches every item that has or does not have an overlay                                                  | `Movies`, `Shows`, `Seasons`,<br>`Episodes`, `Artists`, `Albums`            |
 
-    <sup>**1**</sup> Filters using the special `episodes`/`tracks` [filter](#__tabbed_1_6) with the [default percent](settings.md).
+    <sup>**1**</sup> Filters using the special `episodes`/`tracks` [filter](#special-filters) with the [default percent](settings.md).
 
     #### Examples
 
@@ -206,7 +206,7 @@ You can use the `plex_all: true` builder to filter from your entire library.
     | `versions`                                  | Uses the number of versions found to match<br>minimum: `0`                                                                                                                  | `Any`, `Shows`<sup>**1**</sup>, `Seasons`<sup>**1**</sup>,<br>`Artists`<sup>**1**</sup>, `Albums`<sup>**1**</sup> |
     | `stinger_rating`<sup>**4**</sup>            | Uses the [media stinger](http://www.mediastinger.com/) rating to match. The media stinger rating is if the after/during credits scene is worth staying for.<br>minimum: `0` | `Movies`                                                                                                          | 
 
-    <sup>**1**</sup> Filters using the special `episodes`/`tracks` [filter](#__tabbed_1_6) with the [default percent](settings.md).
+    <sup>**1**</sup> Filters using the special `episodes`/`tracks` [filter](#special-filters) with the [default percent](settings.md).
     
     <sup>**2**</sup> Also filters out missing movies/shows from being added to Radarr/Sonarr.
     
@@ -328,9 +328,9 @@ You can use the `plex_all: true` builder to filter from your entire library.
     | `tmdb_keyword`<sup>**2**</sup>   | Uses the keywords from TMDb to match                                                                                                            | `Movies`, `Shows`                                                           |
     | `origin_country`<sup>**2**</sup> | Uses TMDb origin country [ISO 3166-1 alpha-2 codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) to match<br>Example: `origin_country: us` | `Shows`                                                                     |
     | `tvdb_genre`<sup>**2**</sup>     | Uses the genres from TVDb to match                                                                                                              | `Shows`                                                                     |
-    | `imdb_keyword`<sup>**2**</sup>   | Uses the keywords from IMDb to match See [Special](#special-filters) for more attributes                                                        | `Movies`, `Shows`                                                           |
+    | `imdb_keyword`<sup>**2**</sup>   | Uses the keywords from IMDb to match See [Special Filters](#special-filters) for more attributes                                                        | `Movies`, `Shows`                                                           |
     
-    <sup>**1**</sup> Filters using the special `episodes`/`tracks` [filter](#__tabbed_1_6) with the [default percent](settings.md).
+    <sup>**1**</sup> Filters using the special `episodes`/`tracks` [filter](#special-filters) with the [default percent](settings.md).
     
     <sup>**2**</sup> Also filters out missing movies/shows from being added to Radarr/Sonarr. These attributes **cannot** use the `count` modifiers.
     

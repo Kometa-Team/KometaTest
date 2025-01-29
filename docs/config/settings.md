@@ -10,7 +10,7 @@ The `settings:` attribute and subsequent settings can be used to command various
 
 Examples of these settings include the ability to:
 
-* Cache each Plex GUID and IDs to increase performance
+* Cache each Plex GUID and IDs to increase performance.
 * Create asset folders for collections so that custom posters can be stored for upload.
 * Use a custom repository as the base for all `git` Metadata files.
 
@@ -37,7 +37,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -58,7 +58,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global
     
-    **Accepted Values:** Integer greater than 0
+    **Accepted Values:** Integer greater than 0.
 
     **Default Value:** `60`
 
@@ -80,7 +80,7 @@ The available setting attributes which can be set at each level are outlined bel
     
     ??? warning
     
-        Kometa will not create asset directories.  Asset directories you specify here need to exist already.
+        Kometa will not create asset directories. Asset directories you specify here need to exist already.
 
     <hr style="margin: 0px;">
     
@@ -88,7 +88,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** Any Directory or List of Directories
+    **Accepted Values:** Any Directory or List of Directories.
 
     **Default Value:** `[Directory containing YAML config]/assets`
 
@@ -120,7 +120,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -153,7 +153,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** Any Integer 0 or greater
+    **Accepted Values:** Any Integer 0 or greater.
 
     **Default Value:** `0`
 
@@ -189,7 +189,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -223,7 +223,8 @@ The available setting attributes which can be set at each level are outlined bel
     
     8+. all other `_details` methods
     
-    So if you have a poster for "Some Collection" specified as a `url_poster` and *also* as an asset, the `url_poster` will win and the asset will be ignored.
+    So if you have a poster for "Some Collection" specified as a `url_poster` and *also* as an asset, the `url_poster` 
+    will win and the asset will be ignored.
 
     This setting pushes `asset_directory` to the top of the list, so the asset would win over teh `url_poster`.
 
@@ -233,7 +234,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -261,7 +262,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -283,7 +284,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -314,7 +315,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -345,7 +346,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -366,7 +367,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -391,8 +392,8 @@ The available setting attributes which can be set at each level are outlined bel
     **Accepted Values:**
 
     <table class="clearTable">
-      <tr><td>`sync`</td><td>Will add and remove any items that are added/removed from the source builder.</td></tr>
-      <tr><td>`append`</td><td>Will only add items that are added from the source builder, but will not remove anything even if it is removed from the source builder.</td></tr>
+      <tr><td>`sync`</td><td>Will add and remove any items that are added/removed from the source Builder.</td></tr>
+      <tr><td>`append`</td><td>Will only add items that are added from the source Builder, but will not remove anything even if it is removed from the source Builder.</td></tr>
     </table>
 
     **Default Value:** `append`
@@ -406,17 +407,20 @@ The available setting attributes which can be set at each level are outlined bel
 
     ???+ tip "What does this mean?"
         
-        You have a Trakt list of ten movies.  You run Kometa and create a collection from the list.  The collection contains those ten movies.
+        You have a Trakt list of ten movies. You run Kometa and create a collection from the list. The collection 
+        contains those ten movies.
 
-        Tomorrow the list contains a different ten movies.  You run Kometa.
+        Tomorrow the list contains a different ten movies. You run Kometa.
 
-        `sync_mode: sync` - Kometa syncs the collection with the list, so the collection still has ten movies, but they are the ones that are in the Trakt list today.  The original ten have been removed from the collection.
+        `sync_mode: sync` - Kometa syncs the collection with the list, so the collection still has ten movies, but they
+        are the ones that are in the Trakt list today. The original ten have been removed from the collection.
 
         `sync_mode: append` - Kometa appends the ten new movies to the collection, which now has twenty movies in it.
 
-        The next day five movies change in the list.  You run Kometa.
+        The next day five movies change in the list. You run Kometa.
 
-        `sync_mode: sync` - Kometa syncs the collection with the list, so the collection still has ten movies, the ones that are in the Trakt list today.  The five that are no longer in the Trakt list are removed from the collection.
+        `sync_mode: sync` - Kometa syncs the collection with the list, so the collection still has ten movies, the ones
+        that are in the Trakt list today. The five that are no longer in the Trakt list are removed from the collection.
 
         `sync_mode: append` - Kometa appends the five new movies to the collection, which now has twenty-five movies in it. 
 
@@ -428,7 +432,7 @@ The available setting attributes which can be set at each level are outlined bel
     
     ???+ tip
     
-        `custom` cannot be used if more than one builder is being used for the collection (such as `imdb_list` and 
+        `custom` cannot be used if more than one Builder is being used for the collection (such as `imdb_list` and 
         `trakt_list` within the same collection).
 
     <hr style="margin: 0px;">
@@ -440,10 +444,10 @@ The available setting attributes which can be set at each level are outlined bel
     **Accepted Values:**
 
     <table class="clearTable">
-      <tr><td>`release`</td><td>Order Collection by Release Dates</td></tr>
-      <tr><td>`alpha`</td><td>Order Collection Alphabetically</td></tr>
-      <tr><td>`custom`</td><td>Order Collection Via the Builder Order</td></tr>
-      <tr><td colspan="2">[Any `plex_search` sort option](../files/builders/plex.md#sort-options)</td></tr>
+      <tr><td>`release`</td><td>Order Collection by Release Dates.</td></tr>
+      <tr><td>`alpha`</td><td>Order Collection Alphabetically.</td></tr>
+      <tr><td>`custom`</td><td>Order Collection Via the Builder Order.</td></tr>
+      <tr><td colspan="2">[Any `plex_search` sort option](../files/builders/plex.md#sort-options).</td></tr>
     </table>
 
     **Default Value:** `None`
@@ -492,7 +496,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -513,7 +517,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -544,7 +548,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global
     
-    **Accepted Values:** Any Integer 0 or greater
+    **Accepted Values:** Any Integer 0 or greater.
 
     **Default Value:** `0`
 
@@ -567,7 +571,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -588,7 +592,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -609,7 +613,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -622,7 +626,7 @@ The available setting attributes which can be set at each level are outlined bel
 
 ??? blank "`show_filtered` - Used to show items filtered out.<a class="headerlink" href="#show-filtered" title="Permanent link">¶</a>"
 
-    <div id="show-filtered" />List all items which have been filtered out of a collection or playlist (i.e. if it 
+    <div id="show-filtered" />List all items which have been filtered out of a collection or playlist. (i.e. if it 
     doesn't meet the filter criteria)
 
     <hr style="margin: 0px;">
@@ -631,7 +635,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -644,7 +648,7 @@ The available setting attributes which can be set at each level are outlined bel
 
 ??? blank "`show_unfiltered` - Used to show items which make it through filters.<a class="headerlink" href="#show-unfiltered" title="Permanent link">¶</a>"
 
-    <div id="show-unfiltered" />List all items which have made it through the filters INTO a collection or playlist (i.e. if it 
+    <div id="show-unfiltered" />List all items which have made it through the filters INTO a collection or playlist. (i.e. if it 
     meets the filter criteria)
 
     <hr style="margin: 0px;">
@@ -653,7 +657,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -677,7 +681,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -698,7 +702,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -724,7 +728,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -745,7 +749,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -767,7 +771,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `true`
 
@@ -788,7 +792,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Library
 
-    **Accepted Values:** YAML file path location
+    **Accepted Values:** YAML file path location.
 
     **Default Value:** `[Directory containing YAML config]/[Library Mapping Name]_report.yml`
 
@@ -813,7 +817,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global
     
-    **Accepted Values:** [Any ISO 639-2 Language Code](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes)
+    **Accepted Values:** [Any ISO 639-2 Language Code.](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes)
 
     **Default Value:** `None`
 
@@ -838,7 +842,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** List or comma-separated string of TMDb/TVDb IDs
+    **Accepted Values:** List or comma-separated string of TMDb/TVDb IDs.
 
     **Default Value:** `None`
 
@@ -863,7 +867,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** List or comma-separated string of IMDb IDs
+    **Accepted Values:** List or comma-separated string of IMDb IDs.
 
     **Default Value:** `None`
 
@@ -888,7 +892,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Library/Collection/Playlist
     
-    **Accepted Values:** Any Integer 0 or greater (value is in seconds)
+    **Accepted Values:** Any Integer 0 or greater. (value is in seconds)
 
     **Default Value:** `0`
 
@@ -936,7 +940,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global/Playlist
     
-    **Accepted Values:** list of users or comma-separated string of users
+    **Accepted Values:** list of users or comma-separated string of users.
 
     **Default Value:** `None`
 
@@ -959,7 +963,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -982,7 +986,7 @@ The available setting attributes which can be set at each level are outlined bel
     **Levels with this Attribute:** Global/Library
     
     **Accepted Values:** List or comma-separated string which must include `operations`, `metadata` and `overlays` in 
-    any order
+    any order.
 
     **Default Value:** `operations,metadata,collections,overlays`
 
@@ -1012,7 +1016,7 @@ The available setting attributes which can be set at each level are outlined bel
 
     **Levels with this Attribute:** Global
     
-    **Accepted Values:** Link to repository base
+    **Accepted Values:** Link to repository base.
 
     **Default Value:** `None`
 
@@ -1036,10 +1040,10 @@ The available setting attributes which can be set at each level are outlined bel
     **Accepted Values:**
 
     <table class="clearTable">
-      <tr><td>`jpg`</td><td>Use JPG files for saving Overlays</td></tr>
-      <tr><td>`png`</td><td>Use PNG files for saving Overlays</td></tr>
-      <tr><td>`webp_lossy`</td><td>Use Lossy WEBP files for saving Overlays</td></tr>
-      <tr><td>`webp_lossless`</td><td>Use Lossless WEBP files for saving Overlays</td></tr>
+      <tr><td>`jpg`</td><td>Use JPG files for saving Overlays.</td></tr>
+      <tr><td>`png`</td><td>Use PNG files for saving Overlays.</td></tr>
+      <tr><td>`webp_lossy`</td><td>Use Lossy WEBP files for saving Overlays.</td></tr>
+      <tr><td>`webp_lossless`</td><td>Use Lossless WEBP files for saving Overlays.</td></tr>
     </table>
 
     **Default Value:** `webp_lossy`
@@ -1065,7 +1069,7 @@ The available setting attributes which can be set at each level are outlined bel
     **Accepted Values:** Any Integer 1-100 [Values over 95 are not recommended and may result in excessive image size, 
     perhaps too large to be uploaded to Plex.
 
-    **Default Value:** `None` [when no value is provided the standard 90 is used]
+    **Default Value:** `None` [when no value is provided the standard 90 is used.]
 
     ???+ example "Example"
         
@@ -1103,7 +1107,7 @@ If no library-level attribute is set, then the global attribute is used.
 
 ???+ tip
 
-    Press the :fontawesome-solid-circle-plus: icon to learn more
+    Press the :fontawesome-solid-circle-plus: icon to learn more.
 
 ```yaml
 libraries:
@@ -1137,9 +1141,9 @@ settings:
   minimum_items: 1 #(4)!
 ```
 
-1.  Sets the `run_order` specifically for the Movies library
-2.  Sets the `minimum_items` attribute specifically for the Movies library
+1.  Sets the `run_order` specifically for the Movies library.
+2.  Sets the `minimum_items` attribute specifically for the Movies library.
 3.  Sets the global `run_order` which will apply to all libraries unless a library-level `run_order` is found, as 
-showcased in the above example
+showcased in the above example.
 4.  Sets the global `minimum_items` which will apply to all libraries unless a library-level `minimum_items` is found, 
-as showcased in the above example
+as showcased in the above example.

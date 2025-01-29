@@ -10,7 +10,7 @@ Below is an example of a separator, which can be seen surrounded by a red square
 
 ## Important Note:
 
-Plex does not support creating these empty collections natively through its UI, so they can behave strangely in some cases, primarily related to showing/hiding them in the main library view.  As a workaround, you can use a `placeholder_` [template variable](#shared-separator-variables) to specify a single movie/show to add to these collections so they have one thing in them and will then behave as expected.  For example, `placeholder_imdb_id: tt0068646` will place The Godfather inside the separator in a movie library.
+Plex does not support creating these empty collections natively through its UI, so they can behave strangely in some cases, primarily related to showing/hiding them in the main library view.  As a workaround, you can use a `placeholder_` [Template Variable](#shared-separator-variables) to specify a single movie/show to add to these collections so they have one thing in them and will then behave as expected.  For example, `placeholder_imdb_id: tt0068646` will place The Godfather inside the separator in a movie library.
 
 ## Separator Files
 
@@ -43,9 +43,9 @@ These are all the files that contain a separator
 
 Template Variables can be used to manipulate the file in various ways to slightly change how it works without having to make your own local copy.
 
-Note that the `template_variables:` section only needs to be used if you do want to actually change how the defaults work. Any value not specified is its default value if it has one if not it's just ignored.
+Note that the `template_variables:` section only needs to be used if you do want to actually change how the Defaults work. Any value not specified is its default value if it has one if not it's just ignored.
 
-**[Shared Variables](collection_variables.md) are NOT available to separator collections in any default file.**
+**[Shared Variables](collection_variables.md) are NOT available to separator collections in any Defaults File.**
 
 {%
   include-markdown "./separator_variables.md"

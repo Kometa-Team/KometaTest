@@ -402,7 +402,7 @@ With the release of Kometa 1.20, several changes have been made. Please read the
     
     :fontawesome-solid-2: If your YAML file creates overlays or is a Kometa Defaults Overlay File then it belongs under `overlay_files`
     
-    :fontawesome-solid-3: If your YAML file edits item metadata ([see this example](../files/metadata.md/#__tabbed_1_1)) then it belongs under `metadata_files`
+    :fontawesome-solid-3: If your YAML file edits item metadata ([see this example](../files/metadata.md/#movies)) then it belongs under `metadata_files`
     
     If your file creates collections AND edits item metadata, then it should go in both `collection_files` and `metadata_files`
     
@@ -464,9 +464,9 @@ With the release of Kometa 1.20, several changes have been made. Please read the
 
     All URLs used with `imdb_list` **must** start with `https://www.imdb.com/list/`
 
-    We have introduced the [IMDb Search Builder](../files/builders/imdb.md#imdb-search) which replaces the functionality that `search/title/` and `search/keyword/` used to provide.
+    We have introduced the [IMDb Search Builder](../files/builders/imdb.md#__tabbed_1_3) which replaces the functionality that `search/title/` and `search/keyword/` used to provide.
 
-    As an example, the `imdb_search` builder for `https://www.imdb.com/search/keyword/?keywords=christmas-movie` would be:
+    As an example, the `imdb_search` Builder for `https://www.imdb.com/search/keyword/?keywords=christmas-movie` would be:
 
     ```yaml
     collections:
@@ -475,7 +475,7 @@ With the release of Kometa 1.20, several changes have been made. Please read the
           keyword: christmas movie
     ```
 
-    And the `imdb_search` builder for `https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_special,video&num_votes=100,&keywords=spy,espionage` would be:
+    And the `imdb_search` Builder for `https://www.imdb.com/search/title/?title_type=feature,tv_movie,tv_special,video&num_votes=100,&keywords=spy,espionage` would be:
 
     ```yaml
     collections:

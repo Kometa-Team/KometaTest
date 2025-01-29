@@ -11,10 +11,10 @@ gotify:
   token: thisismytoken
 ```
 
-| Attribute | Allowed Values           |                  Required                  |
-|:----------|:-------------------------|:------------------------------------------:|
-| `url`     | Gotify Server Url        | :fontawesome-solid-circle-check:{ .green } |
-| `token`   | Gotify Application Token | :fontawesome-solid-circle-check:{ .green } |
+| Attribute | Allowed Values            |                  Required                  |
+|:----------|:--------------------------|:------------------------------------------:|
+| `url`     | Gotify Server URL.        | :fontawesome-solid-circle-check:{ .green } |
+| `token`   | Gotify Application Token. | :fontawesome-solid-circle-check:{ .green } |
 
 Once you have added the configuration data your config.yml you have to add `gotify` to any [webhook](webhooks.md) to send that 
 notification to Gotify.

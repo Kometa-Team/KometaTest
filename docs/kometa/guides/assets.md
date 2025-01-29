@@ -128,6 +128,7 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
     The below table assumes that your assets are stored within the directory mapped to `config` in your Kometa environment.
 
 === "ASSET_FOLDERS=True"
+
     | Image Type                       | Asset Folders Image Paths<br>`asset_folders: true`       |
     |:---------------------------------|:---------------------------------------------------------|
     | Collection/Movie/Show poster     | `<path_to_assets>/ASSET_NAME/poster.ext`                 |
@@ -136,7 +137,9 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
     | Season background                | `<path_to_assets>/ASSET_NAME/Season##_background.ext`    |
     | Episode poster                   | `<path_to_assets>/ASSET_NAME/S##E##.ext`                 |
     | Episode background               | `<path_to_assets>/ASSET_NAME/S##E##_background.ext`      |
+
 === "ASSET_FOLDERS=False"
+
     | Image Type                       | Flat Assets Image Paths<br>`asset_folders: false`        |
     |:---------------------------------|:---------------------------------------------------------|
     | Collection/Movie/Show poster     | `<path_to_assets>/ASSET_NAME.ext`                        |
@@ -149,6 +152,7 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
 ## Determining the "Asset Name"
 
 === "Collections"
+
     `ASSET_NAME` is the mapping name used with the collection unless `name_mapping` is specified, in which case you would use what's specified in `name_mapping`.
 
     For example:
@@ -168,6 +172,7 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
     `ASSET_NAME` is "crazy-punctuation-collection"
 
 === "Movies"
+
     `ASSET_NAME` is the exact name of the folder the video file is stored in.
 
     That means the folder name exactly as it appears in the file system.
@@ -195,6 +200,7 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
         ```
 
 === "Shows, Seasons, and Episodes"
+
     `ASSET_NAME` is the exact name of the folder for the show as a whole.
 
     That means the folder name exactly as it appears in the file system.
@@ -211,11 +217,14 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
     The asset names that Kometa will look for are:
 
     === "ASSET_FOLDERS=True"
+
         ```
         config/assets/The Expanse (2015) {tvdb-280619}/poster.ext
         config/assets/The Expanse (2015) {tvdb-280619}/background.ext
         ```
+
     === "ASSET_FOLDERS=False"
+
         ```
         config/assets/The Expanse (2015) {tvdb-280619}.ext
         config/assets/The Expanse (2015) {tvdb-280619}_background.ext
@@ -224,6 +233,7 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
 ## Season and Episode numbers
 
 === "Seasons"
+
     Replace `##` with the zero padded season number (00 for specials)
 
     For example, given this show:
@@ -234,17 +244,21 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
     The asset names that Kometa will look for are:
 
     === "ASSET_FOLDERS=True"
+
         ```
         config/assets/The Expanse (2015) {tvdb-280619}/Season01.ext
         config/assets/The Expanse (2015) {tvdb-280619}/Season01_background.ext
         ```
+
     === "ASSET_FOLDERS=False"
+
         ```
         config/assets/The Expanse (2015) {tvdb-280619}_Season01.ext
         config/assets/The Expanse (2015) {tvdb-280619}_Season01_background.ext
         ```
 
 === "Episodes"
+
     Replace the first `##` with the zero padded season number (00 for specials), the second `##` with the zero padded episode number
 
     For example, given this show:
@@ -255,11 +269,14 @@ Assets can be stored anywhere on the host system that Kometa has visibility of (
     The asset names that Kometa will look for are:
 
     === "ASSET_FOLDERS=True"
+
         ```
         config/assets/The Expanse (2015) {tvdb-280619}/S01E01.ext
         config/assets/The Expanse (2015) {tvdb-280619}/S01E01_background.ext
         ```
+
     === "ASSET_FOLDERS=False"
+
         ```
         config/assets/The Expanse (2015) {tvdb-280619}_S01E01.ext
         config/assets/The Expanse (2015) {tvdb-280619}_S01E01_background.ext
@@ -276,6 +293,7 @@ Here's an example config folder structure with an assets directory with `asset_f
 ### Asset Folders vs Flat Assets
 
 === "ASSET_FOLDERS=True"
+
     ```
     config
     ├── config.yml
@@ -325,7 +343,9 @@ Here's an example config folder structure with an assets directory with `asset_f
             ├── Season04.png
             └── Season04_background.png
     ```
+
 === "ASSET_FOLDERS=False"
+
     ```
     config
     ├── config.yml

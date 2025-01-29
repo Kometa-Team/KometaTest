@@ -172,13 +172,13 @@ When utilizing the [Kometa Defaults](../../defaults/files.md), they are all buil
 
 `<<sort_prefix>><<collection_section>><<pre>><<order_<<key>>>><<title>>`
 
-Users aren't expected to understand what this does, but users can use the `sort_prefix` and `collection_section` template variable to amend the order of categories of collections.
+Users aren't expected to understand what this does, but users can use the `sort_prefix` and `collection_section` Template Variable to amend the order of categories of collections.
 
 ??? important "I want to know what that means"
 
     `<<sort_prefix>><<collection_section>><<pre>><<order_<<key>>>><<title>>`
 
-    Those parts are all defined as template variables, and as such you can override any of them.  This format itself is *also* defined as a template variable, so you can override the entire format if you wish.
+    Those parts are all defined as Template Variables, and as such you can override any of them.  This format itself is *also* defined as a Template Variable, so you can override the entire format if you wish.
 
     As a specific example, the "IMDB Lowest Rated" collection has a sort title of `!020_IMDb Lowest Rated`
 
@@ -192,7 +192,7 @@ Users aren't expected to understand what this does, but users can use the `sort_
     - The `_` is a separator between the collection section and the title; no particular purpose other than that.
     - The `IMDb Lowest Rated` is the title of the collection.
 
-    `<<order_<<key>>>>` is a template variable that is used to order collections within the same collection section. Without this, as above, the collections are sorted by their titles, since everything before that will be identical for all the collections in a given "section".  If you want to modify this, you can set the order key.
+    `<<order_<<key>>>>` is a Template Variable that is used to order collections within the same collection section. Without this, as above, the collections are sorted by their titles, since everything before that will be identical for all the collections in a given "section".  If you want to modify this, you can set the order key.
 
 ???+ example "Example 3 - Reordering Kometa Defaults"
 
@@ -212,7 +212,7 @@ Users aren't expected to understand what this does, but users can use the `sort_
 
 #### Sorting the **groups** of Default collections
 
-Each group of collections created by the Kometa defaults has a default "collection section", so the are displayed in a standard order, which is shown [here](../../defaults/collections.md#collection-section-order).  If you want to change the order in which the sections appear within the set of default-generated collections, you would use the `collection_section` template variable.
+Each group of collections created by the Kometa defaults has a default "collection section", so the are displayed in a standard order, which is shown [here](../../defaults/collections.md#collection-section-order).  If you want to change the order in which the sections appear within the set of default-generated collections, you would use the `collection_section` Template Variable.
 
 For example, these collection groups display in this order, by default:
 
@@ -223,7 +223,7 @@ network   050
 genre     060
 ```
 
-If you wanted to reverse the order in which those groups of collections appear [not the collections within them], you would use the `collection_section` template variable:
+If you wanted to reverse the order in which those groups of collections appear [not the collections within them], you would use the `collection_section` Template Variable:
 
 ```yaml
   libraries:
@@ -252,9 +252,9 @@ That will result in those four groups of collections appearing in the opposite o
 
 #### Sorting the **collections** within the **groups** of Default collections
 
-You can re-order collections within each Defaults file using the `order_<<key>>` template variable. <<key>> refers to the identifier that Kometa uses for each collection, which you can find on the relevant default's wiki page.
+You can re-order collections within each Defaults File using the `order_<<key>>` Template Variable. <<key>> refers to the identifier that Kometa uses for each collection, which you can find on the relevant default's wiki page.
 
-???+ example "Example 4 - Reordering Collections within a Kometa Defaults file"
+???+ example "Example 4 - Reordering Collections within a Kometa Defaults File"
 
     ```yaml
     libraries:
@@ -279,7 +279,7 @@ You can re-order collections within each Defaults file using the `order_<<key>>`
 
 #### Sorting the **contents** of the **collections** within the **groups** of Default collections
 
-You can also re-order the contents of each collection within a Defaults file using **either** the `sort_by` or `collection_order` template variables. The specific option you use will depend on the specific default file [it is ultimately controlled by which type of collection is created by the file, dumb or smart], and will be listed on the relevant wiki page.
+You can also re-order the contents of each collection within a Defaults File using **either** the `sort_by` or `collection_order` Template Variables. The specific option you use will depend on the specific default file [it is ultimately controlled by which type of collection is created by the file, dumb or smart], and will be listed on the relevant wiki page.
 
 For example:
 
@@ -298,9 +298,9 @@ For example:
 ```
 
 1. This sets the sort_by for all collections created by `basic` to `year.desc`, overriding the default of `release.desc`.  `basic` creates smart collections, so it uses `sort_by`.
-2. This sets the sort_by for the `New Episodes` collection created by `basic` to `episode_release.`, overriding the default of `release.desc` AND the override value set by the previous template variable.
+2. This sets the sort_by for the `New Episodes` collection created by `basic` to `episode_release.`, overriding the default of `release.desc` AND the override value set by the previous Template Variable.
 3. This sets the `collection_order` for the IMDB collections to `release`, overriding the default of `custom`.  `imdb` creates dumb collections, so it uses `collection_order`.
-4. This sets the `collection_order` for the `IMDb Lowest Rated` collection to `alpha.`,  overriding the default of `custom` AND the override value set by the previous template variable.
+4. This sets the `collection_order` for the `IMDb Lowest Rated` collection to `alpha.`,  overriding the default of `custom` AND the override value set by the previous Template Variable.
 
 
 ## Builder Sorting
@@ -333,11 +333,11 @@ Within Plex, the attribute that controls the top-level sorting is called the `co
 -  Release (sorted by release date, this is the default order if you do not specify one)
 -  Custom (sorted in a custom order)
 
-When using Kometa builders, the majority of builders will require `collection_order: custom` to be set, which allows you to sort either by a sort order that the builder source allows for (such as sorting an MDBList by revenue), or by the default order that Kometa receives the items from the builder (such as sorting the IMDb Top 250 in the order that they appear on the list).
+When using Kometa builders, the majority of builders will require `collection_order: custom` to be set, which allows you to sort either by a sort order that the Builder source allows for (such as sorting an MDBList by revenue), or by the default order that Kometa receives the items from the Builder (such as sorting the IMDb Top 250 in the order that they appear on the list).
 
 ???+ example "Example 5 - Custom Collection Order"
 
-    If I failed to set `collection_order: custom` in this builder, the Collection Order would be the default Plex order, which is release date.
+    If I failed to set `collection_order: custom` in this Builder, the Collection Order would be the default Plex order, which is release date.
 
     ```yaml
     collections:
@@ -385,7 +385,7 @@ The Sort Orders available for "Dumb" collections are outlined on the **[Dumb Ple
 
 ??? tip
     
-    Although the Sort Options are listed on the Dumb Plex Builder page, the options are available to mostly any builder if you use the `collection_order` attribute to define a `sort_by` value
+    Although the Sort Options are listed on the Dumb Plex Builder page, the options are available to mostly any Builder if you use the `collection_order` attribute to define a `sort_by` value
 
     ```yaml
     collections:
@@ -426,11 +426,11 @@ if you have a Smart Label collection, you can pass the `sort_by` value you want 
         smart_label: audience_rating.desc
     ```
 
-The Sort Orders available for "Smart" collections are outlined on the **[Smart Plex Builder](../../files/builders/smart.md)** page.
+The Sort Orders available for "Smart" collections are outlined on the **[Plex Builder](../../files/builders/plex.md)** page.
 
 ??? tip
     
-    Although the Sort Options are listed on the Smart Plex Builder page, the options are available to mostly any builder when you use a smart Label builder.
+    Although the Sort Options are listed on the Smart Plex Builder page, the options are available to mostly any Builder when you use a smart Label Builder.
 
     ```yaml
     collections:

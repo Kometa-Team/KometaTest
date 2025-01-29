@@ -1222,7 +1222,7 @@ class MetadataFile(DataFile):
                                 if any([a in str(self.templates[template_name][0]) for a in ["<<value", "<<key", f"<<{auto_type}"]]):
                                     has_var = True
                             if not has_var:
-                                raise Failed(f"Config Error: One {map_name} template: {template_names} is required to have the template variable <<value>>")
+                                raise Failed(f"Config Error: One {map_name} template: {template_names} is required to have the Template Variable <<value>>")
                         elif auto_type in ["number", "list"]:
                             raise Failed(f"Config Error: {map_name} template required for type: {auto_type}")
                         else:

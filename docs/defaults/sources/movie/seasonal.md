@@ -26,7 +26,7 @@
     
     ???+ tip 
     
-        Pass `emoji_<<key>>` to the file as template variables to change this value per collection.
+        Pass `emoji_<<key>>` to the file as Template Variables to change this value per collection.
 
         ```yaml
           - default: seasonal
@@ -57,7 +57,7 @@
     
     ???+ tip 
     
-        Pass `schedule_<<key>>` to the file as template variables to change this value per collection.
+        Pass `schedule_<<key>>` to the file as Template Variables to change this value per collection.
 
         ```yaml
           - default: seasonal
@@ -88,7 +88,7 @@
     
     ???+ tip 
     
-        Pass `imdb_search_<<key>>` to the file as template variables to change this value per collection.
+        Pass `imdb_search_<<key>>` to the file as Template Variables to change this value per collection.
 
         ```yaml
           - default: seasonal
@@ -122,7 +122,7 @@
     
     ???+ tip 
     
-        Pass `tmdb_collection_<<key>>` to the file as template variables to change this value per collection.
+        Pass `tmdb_collection_<<key>>` to the file as Template Variables to change this value per collection.
 
         ```yaml
           - default: seasonal
@@ -155,7 +155,7 @@
     
     ???+ tip 
     
-        Pass `tmdb_movie_<<key>>` to the file as template variables to change this value per collection.
+        Pass `tmdb_movie_<<key>>` to the file as Template Variables to change this value per collection.
 
         ```yaml
           - default: seasonal
@@ -188,7 +188,7 @@
     
     ???+ tip 
     
-        Pass `mdblist_list_<<key>>` to the file as template variables to change this value per collection.
+        Pass `mdblist_list_<<key>>` to the file as Template Variables to change this value per collection.
 
         ```yaml
           - default: seasonal
@@ -219,7 +219,7 @@
     
     ???+ tip 
     
-        Pass `trakt_list_<<key>>` to the file as template variables to change this value per collection.
+        Pass `trakt_list_<<key>>` to the file as Template Variables to change this value per collection.
 
         ```yaml
           - default: seasonal

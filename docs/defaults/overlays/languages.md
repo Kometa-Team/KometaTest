@@ -104,13 +104,13 @@ Supported library types: Movie & Show
 
 ??? tip "Square Style (click to expand)"
 
-    Below is a screenshot of the alternative Square (`square`) style which can be set via the `style` template variable.
+    Below is a screenshot of the alternative Square (`square`) style which can be set via the `style` Template Variable.
     
     ![](images/language2.png)
 
 ??? tip "Half Style (click to expand)"
 
-    Below is a screenshot of the alternative Half (`half`) style which can be set via the `style` template variable.
+    Below is a screenshot of the alternative Half (`half`) style which can be set via the `style` Template Variable.
     
     ![](images/language3.png)
 
@@ -144,7 +144,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Overlay Template Variables** are additional variables shared across the Kometa Overlay Defaults.
 

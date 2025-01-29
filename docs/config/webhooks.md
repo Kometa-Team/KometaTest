@@ -15,14 +15,14 @@ webhooks:
   changes: https://myspecialdomain/kometa
 ```
 
-| Attribute                               |                   Global                   |                  Library                   |                  Collection                  |
-|:----------------------------------------|:------------------------------------------:|:------------------------------------------:|:--------------------------------------------:|
-| [`error`](#error-notifications)         | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |   :fontawesome-solid-circle-xmark:{ .red }   |
-| [`version`](#version-notifications)     | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |   :fontawesome-solid-circle-xmark:{ .red }   |
-| [`run_start`](#run-start-notifications) | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |   :fontawesome-solid-circle-xmark:{ .red }   |
-| [`run_end`](#run-end-notifications)     | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |   :fontawesome-solid-circle-xmark:{ .red }   |
-| [`delete`](#delete-notifications)       | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |   :fontawesome-solid-circle-xmark:{ .red }   |
-| [`changes`](#changes-notifications)     | :fontawesome-solid-circle-check:{ .green } | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-check:{ .green }  |
+| Attribute                               |                   Global                   |                  Library                   |                 Collection                 |
+|:----------------------------------------|:------------------------------------------:|:------------------------------------------:|:------------------------------------------:|
+| [`error`](#error-notifications)         | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |  :fontawesome-solid-circle-xmark:{ .red }  |
+| [`version`](#version-notifications)     | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |  :fontawesome-solid-circle-xmark:{ .red }  |
+| [`run_start`](#run-start-notifications) | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |  :fontawesome-solid-circle-xmark:{ .red }  |
+| [`run_end`](#run-end-notifications)     | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |  :fontawesome-solid-circle-xmark:{ .red }  |
+| [`delete`](#delete-notifications)       | :fontawesome-solid-circle-check:{ .green } |  :fontawesome-solid-circle-xmark:{ .red }  |  :fontawesome-solid-circle-xmark:{ .red }  |
+| [`changes`](#changes-notifications)     | :fontawesome-solid-circle-check:{ .green } | :fontawesome-solid-circle-check:{ .green } | :fontawesome-solid-circle-check:{ .green } |
 
 * Each Attribute can be either a webhook url as a string or a list of webhooks urls.
 

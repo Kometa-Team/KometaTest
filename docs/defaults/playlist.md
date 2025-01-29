@@ -11,7 +11,7 @@ Marvel Cinematic Universe or Star Trek).
 This Default file requires [Trakt Authentication](../config/trakt.md)
 
 This file assumes that you have libraries named `Movies` and `TV Shows`. If you do not have these libraries or want to 
-use alternative/additional libraries, use the `libraries` template variable which is outlined in the 
+use alternative/additional libraries, use the `libraries` Template Variable which is outlined in the 
 [Template Variables](#template-variables) table.
 
 ![](images/playlist.png)

@@ -48,7 +48,7 @@ Both of those walkthroughs will get you up and running with Kometa in a few minu
 
     - Setting up the initial config file
     - Creating some sample collections using the defaults
-    - Setting up a collection file and creating a sample collection
+    - Setting up a Collection File and creating a sample collection
     - Adding some default overlays
 
 After you complete the steps in one of those walkthroughs, you will have a working Kometa setup, ready for you to tune and expand.

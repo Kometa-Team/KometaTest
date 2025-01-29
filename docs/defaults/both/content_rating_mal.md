@@ -46,7 +46,7 @@ libraries:
 
 Template Variables can be used to manipulate the file in various ways to slightly change how it works without having to make your own local copy.
 
-Note that the `template_variables:` section only needs to be used if you do want to actually change how the defaults work. Any value not specified will use its default value if it has one if not it's just ignored.
+Note that the `template_variables:` section only needs to be used if you do want to actually change how the Defaults work. Any value not specified will use its default value if it has one if not it's just ignored.
 
 ## Template Variables
 
@@ -58,7 +58,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Shared Template Variables** are additional variables shared across the Kometa Defaults.
 
@@ -69,10 +69,10 @@ work. Any value not specified will use its default value if it has one if not it
 
         | Variable                      | Description & Values                                                                                                                                                                                                                                            |
         |:------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-        | `limit`                       | **Description:** Changes the Builder Limit for all collections in a Defaults file.<br>**Values:** Number Greater than 0                                                                                                                                         |
+        | `limit`                       | **Description:** Changes the Builder Limit for all collections in a Defaults File.<br>**Values:** Number Greater than 0                                                                                                                                         |
         | `limit_<<key>>`<sup>1</sup>   | **Description:** Changes the Builder Limit of the [key's](#collection_section) collection.<br>**Default:** `limit`<br>**Values:** Number Greater than 0                                                                                                                      |
-        | `sort_by`                     | **Description:** Changes the Smart Filter Sort for all collections in a Defaults file.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/smart.md#sort-options)                                               |
-        | `sort_by_<<key>>`<sup>1</sup> | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/smart.md#sort-options)                                                         |
+        | `sort_by`                     | **Description:** Changes the Smart Filter Sort for all collections in a Defaults File.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                               |
+        | `sort_by_<<key>>`<sup>1</sup> | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                         |
         | `include`                     | **Description:** Overrides the [default include list](#default-values).<br>**Values:** List of Content Ratings found in your library                                                                                                                                   |
         | `append_include`              | **Description:** Appends to the [default include list](#default-values).<br>**Values:** List of Content Ratings found in your library                                                                                                                                  |
         | `remove_include`              | **Description:** Removes from the [default include list](#default-values).<br>**Values:** List of Content Ratings found in your library                                                                                                                                |
@@ -83,8 +83,8 @@ work. Any value not specified will use its default value if it has one if not it
         | `name_format`                 | **Description:** Changes the title format of the Dynamic Collections.<br>**Default:** `<<key_name>> <<library_translationU>>s`<br>**Values:** Any string with `<<key_name>>` in it.                                                                             |
         | `summary_format`              | **Description:** Changes the summary format of the Dynamic Collections.<br>**Default:** `<<library_translationU>>s that are rated <<key_name>>.`<br>**Values:** Any string.                                                                                     |
 
-        1. Each default collection has a `key` [see here]() that you must replace 
-        `<<key>>` with when using this template variable.  These keys are found in the table at the top of this page.
+        1. Each default collection has a [`key`](#collection_section) that you must replace `<<key>>` with when using 
+        this Template Variable. These keys are found in the table at the top of this page.
 
     === "Shared Template Variables"
 

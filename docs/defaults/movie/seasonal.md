@@ -58,7 +58,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Shared Template Variables** are additional variables shared across the Kometa Defaults.
 
@@ -80,10 +80,10 @@ work. Any value not specified will use its default value if it has one if not it
         | `emoji_<<key>>`<sup>1</sup>           | **Description:** Controls the Emoji Prefix for the specified [key's](#collection_section) collection. Overrides the [default emoji](#default-values) for that collection if used.<br>**Values:** Any String                                                                                                                      |
         | `limit`                               | **Description:** Changes the Builder Limit for all collections in this file.<br>**Values:** Number Greater than 0                                                                                                                                                                                |
         | `limit_<<key>>`<sup>1</sup>           | **Description:** Changes the Builder Limit of the specified [key's](#collection_section) collection.<br>**Default:** `limit`<br>**Values:** Number Greater than 0                                                                                                                                                       |
-        | `sync_mode`                           | **Description:** Changes the Sync Mode for all collections in a Defaults file.<br>**Default:** `sync`<br>**Values:**<table class="clearTable"><tr><td>`sync`</td><td>Add and Remove Items based on Builders</td></tr><tr><td>`append`</td><td>Only Add Items based on Builders</td></tr></table> |
+        | `sync_mode`                           | **Description:** Changes the Sync Mode for all collections in a Defaults File.<br>**Default:** `sync`<br>**Values:**<table class="clearTable"><tr><td>`sync`</td><td>Add and Remove Items based on Builders</td></tr><tr><td>`append`</td><td>Only Add Items based on Builders</td></tr></table> |
         | `sync_mode_<<key>>`<sup>1</sup>       | **Description:** Changes the Sync Mode of the specified [key's](#collection_section) collection.<br>**Default:** `sync_mode`<br>**Values:**<table class="clearTable"><tr><td>`sync`</td><td>Add and Remove Items based on Builders</td></tr><tr><td>`append`</td><td>Only Add Items based on Builders</td></tr></table> |
-        | `sort_by`                             | **Description:** Changes the Smart Filter Sort for all collections in this file.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/smart.md#sort-options)                                                                                      |
-        | `sort_by_<<key>>`<sup>1</sup>         | **Description:** Changes the Smart Filter Sort of the specified [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/smart.md#sort-options)                                                                                          |
+        | `sort_by`                             | **Description:** Changes the Smart Filter Sort for all collections in this file.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                                                      |
+        | `sort_by_<<key>>`<sup>1</sup>         | **Description:** Changes the Smart Filter Sort of the specified [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                                                          |
         | `schedule`                            | **Description:** Changes the Schedule for all collections in this file. Use `daily` to have all collections show.<br>**Values:** [Any Schedule Option](../../config/schedule.md)                                                                                                                 |
         | `schedule_<<key>>`<sup>1</sup>        | **Description:** Changes the Schedule of the specified [key's](#collection_section) collection. Overrides the [default schedule](#default-values) for that collection if used.<br>**Values:** [Any Schedule Option](../../config/schedule.md)                                                                                 |
         | `data`                                | **Description:** Overrides the [default data dictionary](#default-values). Defines the data that the custom dynamic collection processes.<br>**Values:** Dictionary List of keys/names                                                                                                                     |
@@ -93,8 +93,8 @@ work. Any value not specified will use its default value if it has one if not it
         | `name_format`                         | **Description:** Changes the title format of the Dynamic Collections.<br>**Default:** `<<key_name>> <<library_translationU>>s`<br>**Values:** Any string with `<<key_name>>` in it.                                                                                                              |
         | `summary_format`                      | **Description:** Changes the summary format of the Dynamic Collections.<br>**Default:** `A collection of <<key_name>> <<library_translation>>s that may relate to the season.`<br>**Values:** Any string.                                                                                        |
 
-        1. Each default collection has a `key` [see here]() that you must replace 
-        `<<key>>` with when using this template variable.  These keys are found in the table at the top of this page.
+        1. Each default collection has a [`key`](#collection_section) that you must replace `<<key>>` with when using 
+        this Template Variable. These keys are found in the table at the top of this page.
 
     === "Shared Template Variables"
 

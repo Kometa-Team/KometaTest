@@ -1,4 +1,4 @@
-You should see that the collection file gets loaded:
+You should see that the Collection File gets loaded:
 
 ``` { .shell .no-copy }
 | Loading Collection File: config/Movies.yml

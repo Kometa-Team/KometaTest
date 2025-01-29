@@ -6,7 +6,7 @@ This article will walk you through getting Kometa set up and running via Docker.
 2. Retrieving the image
 3. Setting up the initial config file
 4. Creating some sample collections using the defaults
-5. Setting up a collection file and creating a sample collection.
+5. Setting up a Collection File and creating a sample collection.
 6. Adding some default overlays.
 
 The specific steps you will be taking:
@@ -19,7 +19,7 @@ The specific steps you will be taking:
     - Plex URL and Token
 5. Then, iteratively:
     - use `docker` to run the image
-    - use a text editor to modify a couple of text files until you have a working config file and a single working collection file.
+    - use a text editor to modify a couple of text files until you have a working config file and a single working Collection File.
 
 Note that running a Docker container is inherently a pretty technical process.  If you are unable or unwilling to learn the rudiments of using Docker, this may not be the tool for you.
 

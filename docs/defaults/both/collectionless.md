@@ -57,11 +57,11 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     ???+ warning
 
-        [Shared Collection Variables](../collection_variables.md) are NOT available to this default file.
+        [Shared Collection Variables](../collection_variables.md) are NOT available to this Defaults File.
 
     === "File-Specific Template Variables"
 
@@ -73,7 +73,7 @@ work. Any value not specified will use its default value if it has one if not it
         | `collection_order`       | **Description:** Changes the Collection Order for all collections in this file.<br>**Default:** `alpha`<br>**Values:**<table class="clearTable"><tr><td>`release`</td><td>Order Collection by Release Dates</td></tr><tr><td>`alpha`</td><td>Order Collection Alphabetically</td></tr><tr><td>`custom`</td><td>Order Collection Via the Builder Order</td></tr><tr><td>[Any `plex_search` Sort Option](../../files/builders/plex.md#sort-options)</td><td>Order Collection by any `plex_search` Sort Option</td></tr></table> |
         | `url_poster`             | **Description:** Changes the poster url of the collection.<br>**Values:** URL directly to the Image                                                                                                                                                                                                                                                                                                                                                                                                                           |
         | `exclude`                | **Description:** Exclude these Collections from being considered for collectionless.<br>**Values:** List of Collections                                                                                                                                                                                                                                                                                                                                                                                                       |
-        | `exclude_prefix`         | **Description:** Overrides the [default exclude_prefix list](#default-values). Exclude Collections with one of these prefixes from being considered for collectionless.<br>**Default:** [default exclude_prefix list](#exclude-prefix)<br>**Values:** List of Prefixes                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                 |
+        | `exclude_prefix`         | **Description:** Overrides the default exclude_prefix list. Exclude Collections with one of these prefixes from being considered for collectionless.<br>**Default:** default exclude_prefix list<br>**Values:** List of Prefixes                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                 |
 
 ???+ example "Example Template Variable Amendments"
 

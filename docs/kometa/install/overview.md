@@ -28,7 +28,7 @@ For those who need full installation walkthroughs, please refer to the following
 
 If you are using unRAID, Kubernetes, QNAP, or Synology refer to the following basic guide to Docker container setup for each system:
 
-**this doesn't cover the Kometa setup specifics found in the guides above with regard to creating the config file and collection file, so you may want to go through the [Docker Walkthrough](docker.md) first on your computer to gain that understanding.**
+**this doesn't cover the Kometa setup specifics found in the guides above with regard to creating the config file and Collection File, so you may want to go through the [Docker Walkthrough](docker.md) first on your computer to gain that understanding.**
 
   * [unRAID Walkthrough](unraid.md)
   * [Kubernetes Walkthrough](kubernetes.md)

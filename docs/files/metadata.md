@@ -235,7 +235,7 @@ You can have the script edit the metadata of Items by adding them to the `metada
 
 ## Matching Items
 
-The `match` attribute is used to match movies within Plex to that definition within the Metadata file. One definition 
+The `match` attribute is used to match movies within Plex to that definition within the Metadata File. One definition 
 can match and edit multiple items. The available matching options are outlined below.
 
 === "Movies"

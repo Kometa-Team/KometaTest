@@ -59,7 +59,7 @@ The file can now be saved and is ready for use.
 
 ## Running the Metadata File
 
-Now that my metadata file is ready, I can run it against my library.
+Now that my Metadata File is ready, I can run it against my library.
 
 I will open my `config.yml` file and add the `mediux.yml` within the `metadata_files` section of my Movies library:
 

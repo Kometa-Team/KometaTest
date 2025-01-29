@@ -6,7 +6,7 @@ This article will walk you through getting Kometa set up and running.  It will c
 2. Installing requirements
 3. Setting up the initial config file
 4. Creating some sample collections using the defaults
-5. Setting up a collection file and creating a sample collection.
+5. Setting up a Collection File and creating a sample collection.
 6. Adding some default overlays.
 
 The specific steps you will be taking:
@@ -21,7 +21,7 @@ The specific steps you will be taking:
 
 6. Then, iteratively:
    - use `python` to run the script
-   - use a text editor to modify a couple of text files until you have a working config file and a single working collection file.
+   - use a text editor to modify a couple of text files until you have a working config file and a single working Collection File.
 
 Note that running a Python script is inherently a pretty technical process.  If you are unable or unwilling to learn the rudiments of using tools like python and git, you should probably strongly consider running Kometa in [Docker](docker.md).  That will eliminate the Python and git installs from this process and make it as simple as it can be.
 

@@ -15,7 +15,7 @@ Supported library types: Movie / Show
 
 ### Bigger Style
 
-Below is a screenshot of the alternative White (`bigger`) style which can be set via the `style` template variable.
+Below is a screenshot of the alternative White (`bigger`) style which can be set via the `style` Template Variable.
 
 ![](images/studio_bigger.jpg)
 
@@ -43,7 +43,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Overlay Template Variables** are additional variables shared across the Kometa Overlay Defaults.
 

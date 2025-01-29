@@ -11,7 +11,7 @@ If you want to customize these values, use the methods described above.
 
     ???+ tip 
     
-        Pass `trakt_list_<<key>>` to the file as template variables to change this value per playlist.
+        Pass `trakt_list_<<key>>` to the file as Template Variables to change this value per playlist.
 
         ```yaml
           - default: playlists

@@ -1,6 +1,6 @@
 ## Poster Styles
 
-This Default can use the `style` template variable to easily change the posters styles.
+This Default can use the `style` Template Variable to easily change the posters styles.
 
 === "Black & White Style (Default)"
 

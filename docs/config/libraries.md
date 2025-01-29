@@ -34,7 +34,7 @@ The available attributes for each library are as follows:
     
     **Attribute:** `library_name`
     
-    **Accepted Values:** Library Name
+    **Accepted Values:** Library Name.
 
     **Default Value:** Base Attribute Name
 
@@ -86,7 +86,7 @@ The available attributes for each library are as follows:
         ```
 
         By default, when `collection_files` is missing Kometa will look within the root Kometa directory for a 
-        collection file called `<MAPPING_NAME>.yml`. In the example below, Kometa will look for a file named 
+        Collection File called `<MAPPING_NAME>.yml`. In the example below, Kometa will look for a file named 
         `TV Shows.yml`.
         
         ```yaml
@@ -112,7 +112,7 @@ The available attributes for each library are as follows:
     
     **Attribute:** `metadata_files`
     
-    **Accepted Values:** Location of [Metadata Files](../files/metadata.md)
+    **Accepted Values:** Location of [Metadata Files](../files/metadata.md).
 
     **Default Value:** `None`
 
@@ -135,7 +135,7 @@ The available attributes for each library are as follows:
     
     **Attribute:** `overlay_files`
     
-    **Accepted Values:** Location of [Overlay Files](../files/overlays.md)
+    **Accepted Values:** Location of [Overlay Files](../files/overlays.md).
 
     **Default Value:** `None`
 
@@ -156,7 +156,7 @@ The available attributes for each library are as follows:
     is used to store information about what media is added, removed, filtered, and missing from the Plex library 
     compared to what is expected from the Collection, Metadata, Overlay or Playlist file.
     
-    If your Collection file creates a collection with `Movie 1`, `Movie 2` and `Movie 3` but your Plex library only has 
+    If your Collection File creates a collection with `Movie 1`, `Movie 2` and `Movie 3` but your Plex library only has 
     `Movie 1` and `Movie 3`, then the missing YAML file will be updated to inform the user that `Movie 2` was missing 
     from the library.
     
@@ -164,10 +164,10 @@ The available attributes for each library are as follows:
     
     **Attribute:** `report_path`
     
-    **Accepted Values:** Location to save the YAML Report file
+    **Accepted Values:** Location to save the YAML Report file.
 
-    **Default Value:** `/config/<<MAPPING_NAME>>_report.yml` where `<<MAPPING_NAME>>` is the name of the library 
-    attribute
+    **Default Value:** `/config/<<MAPPING_NAME>>_report.yml` (Where `<<MAPPING_NAME>>` is the name of the library 
+    attribute.)
 
     ???+ example "Example"
         
@@ -194,7 +194,7 @@ The available attributes for each library are as follows:
 ??? blank "`template_variables` - Used to define [Custom Template Variables](../files/templates.md#template-variables) for every file in a library.<a class="headerlink" href="#template-variables" title="Permanent link">¶</a>"
 
     <div id="template-variables" />Passes all given [Template Variables](../files/templates.md#template-variables) to 
-    every template in every Collection, Metadata, and Overlay file run.
+    every template in every Collection, Metadata, and Overlay File run.
     
     <hr style="margin: 0px;">
     
@@ -225,7 +225,7 @@ The available attributes for each library are as follows:
     
     **Attribute:** `schedule`
     
-    **Accepted Values:** Any [schedule option](schedule.md)
+    **Accepted Values:** Any [schedule option](schedule.md).
 
     **Default Value:** `daily`
 
@@ -249,7 +249,7 @@ The available attributes for each library are as follows:
     
     **Attribute:** `operations`
     
-    **Accepted Values:** Any [Library Operation](operations.md)
+    **Accepted Values:** Any [Library Operation](operations.md).
 
     **Default Value:** `None`
 
@@ -269,10 +269,11 @@ The available attributes for each library are as follows:
 
     <div id="remove-overlays" />Used to remove overlays from this library only. 
 
-    Kometa will aim to use the Original Posters backup that it created in the "overlays" folder to restore from, and will be unable to remove the overlays if this backup no longer exists. Kometa will also remove the `Overlay` label from the items in Plex.
+    Kometa will aim to use the Original Posters backup that it created in the "overlays" folder to restore from, and 
+    will be unable to remove the overlays if this backup no longer exists. Kometa will also remove the `Overlay` label 
+    from the items in Plex.
 
     The result of setting `remove_overlays` is your Plex library should no longer have any Overlays applied by Kometa.
-    
 
     ???+ warning "Proceed with Caution"
 
@@ -283,7 +284,7 @@ The available attributes for each library are as follows:
     
     **Attribute:** `remove_overlays`
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -301,24 +302,28 @@ The available attributes for each library are as follows:
 
 ??? blank "`reapply_overlays` - Used to reapply overlays.<a class="headerlink" href="#reapply-overlays" title="Permanent link">¶</a>"
 
-    <div id="reapply-overlays" />Used to reapply overlays from this library only. This will reapply overlays to every item in your library.
+    <div id="reapply-overlays" />Used to reapply overlays from this library only. This will reapply overlays to every 
+    item in your library.
 
-    Note that this is typically NEVER required.  Kometa will automatically update overlays as needed as part of a regular overlay run.
+    Note that this is typically NEVER required. Kometa will automatically update overlays as needed as part of a 
+    regular overlay run.
 
     ???+ warning "Proceed with Caution"
 
-        When set to `true`, this will reapply all overlays on each run even if there is no need to do so, which will result in 
-        [image bloat](../kometa/scripts/imagemaid.md).
+        When set to `true`, this will reapply all overlays on each run even if there is no need to do so, which will 
+        result in [image bloat](../kometa/scripts/imagemaid.md).
 
-        If you think you need to use this setting, please think hard about why you have that impression, as you are almost certainly mistaken.
+        If you think you need to use this setting, please think hard about why you have that impression, as you are 
+        almost certainly mistaken.
 
-        In general use, this setting will only extend runtimes and cause image bloat in the Plex metadata for no good reason.
+        In general use, this setting will only extend runtimes and cause image bloat in the Plex metadata for no good 
+        reason.
 
     <hr style="margin: 0px;">
     
     **Attribute:** `reapply_overlays`
     
-    **Accepted Values:** `true` or `false`
+    **Accepted Values:** `true` or `false`.
 
     **Default Value:** `false`
 
@@ -338,22 +343,26 @@ The available attributes for each library are as follows:
 
     <div id="reset-overlays" />Used to reset the base image used for overlays from this library only.
 
-    Kometa will fetch a new "base" image from the desired source, and will use that as the new Original Poster upon which to apply overlays as part of the run. 
+    Kometa will fetch a new "base" image from the desired source, and will use that as the new Original Poster upon 
+    which to apply overlays as part of the run. 
 
-    The result of setting `reset_overlays` is that your Plex library will have Overlays applied based upon the new images taken from the source specified.
+    The result of setting `reset_overlays` is that your Plex library will have Overlays applied based upon the new 
+    images taken from the source specified.
     
     ???+ warning "Proceed with Caution"
 
         This will reset all posters to the desired source on each run and will reapply 
         all overlays on each run, which will result in [image bloat](../kometa/scripts/imagemaid.md).
 
-        Additionally, any image obtained from this setting will take priority over any image you set using an Asset Directory. If you use Asset Directories, you shouldn't really be using this setting as the Asset Directory should be the single source of truth for what the "base" image is.
+        Additionally, any image obtained from this setting will take priority over any image you set using an Asset 
+        Directory. If you use Asset Directories, you shouldn't really be using this setting as the Asset Directory 
+        should be the single source of truth for what the "base" image is.
 
     <hr style="margin: 0px;">
     
     **Attribute:** `reset_overlays`
     
-    **Accepted Values:** `plex` or `tmdb`
+    **Accepted Values:** `plex` or `tmdb`.
 
     **Default Value:** `None`
 
@@ -372,14 +381,14 @@ The available attributes for each library are as follows:
 ??? blank "`schedule_overlays` - Used to schedule overlays.<a class="headerlink" href="#schedule-overlays" title="Permanent link">¶</a>"
 
     <div id="schedule-overlays" />Used to schedule overlays to run when desired. Overlays are applied all at once in a 
-    batch therefore you cannot schedule individual Overlay Files, as any unscheduled overlay file will be removed each 
+    batch therefore you cannot schedule individual Overlay Files, as any unscheduled Overlay File will be removed each 
     time Kometa is run.
 
     <hr style="margin: 0px;">
     
     **Attribute:** `schedule_overlays`
     
-    **Accepted Values:** [Any Schedule Option](schedule.md)
+    **Accepted Values:** [Any Schedule Option](schedule.md).
 
     **Default Value:** `daily`
 
@@ -646,9 +655,11 @@ This example is an advanced version of the library mappings which highlights som
 
 ???+ example "Example Library Mappings"
 
-    In this example, the `"TV Shows On Second Plex"` library has a library-level `plex` configuration, which takes priority over the `plex` configuration set at the global level.
+    In this example, the `"TV Shows On Second Plex"` library has a library-level `plex` configuration, which takes 
+    priority over the `plex` configuration set at the global level.
     
-    The `"Anime"` library also has a library-level `radarr` configuration, which takes priority over the `radarr` configuration set at the global level.
+    The `"Anime"` library also has a library-level `radarr` configuration, which takes priority over the `radarr` 
+    configuration set at the global level.
 
     ```yaml
     libraries:

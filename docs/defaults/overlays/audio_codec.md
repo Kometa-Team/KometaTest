@@ -38,7 +38,7 @@ Recommendations: Designed for [TRaSH Guides](https://trash-guides.info/) filenam
 
 ### Standard Style
 
-Below is a screenshot of the alternative Standard (`standard`) style which can be set via the `style` template variable.
+Below is a screenshot of the alternative Standard (`standard`) style which can be set via the `style` Template Variable.
 
 ![](images/audio_codec2.png)
 
@@ -72,7 +72,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Overlay Template Variables** are additional variables shared across the Kometa Overlay Defaults.
 

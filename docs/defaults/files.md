@@ -5,7 +5,7 @@ hide:
 
 # List of Defaults Files
 
-The below table outlines the available Defaults files which can be called via `collection_files` (for Collections), `overlay_files` (for Overlays) and `playlist_files` (for Playlists).
+The below table outlines the available Defaults Files which can be called via `collection_files` (for Collections), `overlay_files` (for Overlays) and `playlist_files` (for Playlists).
 
 {%
    include-markdown "./collection_list.md"

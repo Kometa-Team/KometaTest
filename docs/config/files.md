@@ -1,6 +1,6 @@
 # File Blocks
 
-When using Kometa, the structure of each library is made using File Blocks
+When using Kometa, the structure of each library is made using File Blocks.
 
 ???+ example "Example Library Structure"
 
@@ -13,7 +13,7 @@ When using Kometa, the structure of each library is made using File Blocks
 
     In the above example, `collection_files` is the type of File, which tells Kometa that the entries that follow will 
     create/update collections and `- default:` is the type of Path, which Kometa that the file it is looking for is a 
-    Kometa Defaults file.
+    Kometa Defaults File.
 
     These ideas will be further outlined on this page.
 
@@ -103,7 +103,7 @@ The location types are outlined as follows:
 
 ??? blank "`default` - Used to run one of the built-in [Kometa Defaults](../defaults/guide.md) file.<a class="headerlink" href="#default" title="Permanent link">¶</a>"
 
-    <div id="default" />Used to run a built-in Kometa Defaults file. The values you'd enter here are listed in the 
+    <div id="default" />Used to run a built-in Kometa Defaults File. The values you'd enter here are listed in the 
     [default usage guide](../defaults/guide.md).
     
     ???+ example "Example"
@@ -187,7 +187,7 @@ You can have some control of the files from inside your Configuration file by us
                   collection_mode: hide
         ```
 
-        In this example there will be two template variables added to every template in the git file default: genre.  
+        In this example there will be two Template Variables added to every template in the git file default: genre.  
         
         `schedule_separator` is set to `never` to not show a separator in this section and `collection_mode` is set to 
         `hide`.
@@ -207,7 +207,7 @@ You can have some control of the files from inside your Configuration file by us
     
     **Attribute:** `schedule`
     
-    **Accepted Values:** Any [schedule option](schedule.md)
+    **Accepted Values:** Any [schedule option](schedule.md).
 
     **Default Value:** `daily`
 
@@ -244,7 +244,7 @@ You can have some control of the files from inside your Configuration file by us
     
     **Attribute:** `asset_directory`
     
-    **Accepted Values:** Any directory
+    **Accepted Values:** Any directory.
 
     **Default Value:** `[Directory containing YAML config]/assets`
 

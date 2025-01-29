@@ -570,7 +570,7 @@ Kometa will load those environment variables when it starts up, and you don't ha
         To preserve functionality of Kometa, this will **not** remove the Overlay label, which is required for Kometa to know 
         which items have Overlays applied.
     
-        This will impact any [Smart Label Collections](../files/builders/smart.md#smart-label) that you have in your 
+        This will impact any [Smart Label Collections](../files/builders/plex.md#smart-label-builder) that you have in your 
         library.
     
         We do not recommend using this on a regular basis if you also use any operations or collections that update 

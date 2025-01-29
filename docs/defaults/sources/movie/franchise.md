@@ -51,7 +51,7 @@ If you want to customize these values, use the methods described above.
 
     ???+ tip 
 
-        Pass `movie_<<key>>` to the file as template variables to change this value per collection. 
+        Pass `movie_<<key>>` to the file as Template Variables to change this value per collection. 
 
         ```yaml
           - default: franchise
@@ -84,7 +84,7 @@ If you want to customize these values, use the methods described above.
     
     ???+ tip 
     
-        Pass `name_mapping_<<key>>` to the file as template variables to change this value per collection. 
+        Pass `name_mapping_<<key>>` to the file as Template Variables to change this value per collection. 
     
         ```yaml
           - default: franchise

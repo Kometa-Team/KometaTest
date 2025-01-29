@@ -25,7 +25,7 @@ libraries:
 
 Edit `Movies.yml` to reflect the actions you want Kometa to perform on *your* libraries.
 
-TV Shows and other libraries work the same way as you've seen above.  Create a section under `libraries:` in the config.yml, refer to default files or create a collection file, define collections, run the script.
+TV Shows and other libraries work the same way as you've seen above.  Create a section under `libraries:` in the config.yml, refer to default files or create a Collection File, define collections, run the script.
 
 Investigate the rest of the wiki to learn about everything Kometa can do for you.
 

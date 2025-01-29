@@ -52,4 +52,4 @@ This is not always the case, however.  If you had assigned user ratings to every
 
 ### Other Metadata
 
-If you have used Kometa to change titles, summaries, years, artwork, etc. with a metadata file [all things you would have explicitly told it to do] there is no way to restore what was there before Kometa changed it.
+If you have used Kometa to change titles, summaries, years, artwork, etc. with a Metadata File [all things you would have explicitly told it to do] there is no way to restore what was there before Kometa changed it.

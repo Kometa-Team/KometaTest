@@ -26,7 +26,7 @@ Supported Library Types: Show
 
 ## Poster Styles
 
-This Default can use the `style` template variable to easily change the posters styles.
+This Default can use the `style` Template Variable to easily change the posters styles.
 
 ### Color Style (Default)
 
@@ -57,7 +57,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Shared Template Variables** are additional variables shared across the Kometa Defaults.
 
@@ -68,10 +68,10 @@ work. Any value not specified will use its default value if it has one if not it
 
         | Variable                      | Description & Values                                                                                                                                                                                                                                     |
         |:------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-        | `limit`                       | **Description:** Changes the Builder Limit for all collections in a Defaults file.<br>**Values:** Number Greater than 0                                                                                                                                  |
+        | `limit`                       | **Description:** Changes the Builder Limit for all collections in a Defaults File.<br>**Values:** Number Greater than 0                                                                                                                                  |
         | `limit_<<key>>`<sup>1</sup>   | **Description:** Changes the Builder Limit of the [key's](#collection_section) collection.<br>**Default:** `limit`<br>**Values:** Number Greater than 0                                                                                                               |
-        | `sort_by`                     | **Description:** Changes the Smart Filter Sort for all collections in a Defaults file.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/smart.md#sort-options)                                        |
-        | `sort_by_<<key>>`<sup>1</sup> | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/smart.md#sort-options)                                                  |
+        | `sort_by`                     | **Description:** Changes the Smart Filter Sort for all collections in a Defaults File.<br>**Default:** `release.desc`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                        |
+        | `sort_by_<<key>>`<sup>1</sup> | **Description:** Changes the Smart Filter Sort of the [key's](#collection_section) collection.<br>**Default:** `sort_by`<br>**Values:** [Any `smart_filter` Sort Option](../../files/builders/plex.md#sort-options)                                                  |
         | `style`                       | **Description:** Choose between the default color version or the **white** one.<br>**Values:** `color` or `white`                                                                                                                                        |
         | `include`                     | **Description:** Overrides the [default include list](#default-values).<br>**Values:** List of Networks found in your library                                                                                                                                   |
         | `append_include`              | **Description:** Appends to the [default include list](#default-values).<br>**Values:** List of Networks found in your library                                                                                                                                  |

@@ -92,7 +92,7 @@ These are the attributes which can be utilized within the Playlist File:
 
 
 Each playlist requires its own section within the `playlists` attribute and unlike collections, playlists can only be 
-built using one Builder as their ordering is inherited from the builder; it is not possible to combine builders.
+built using one Builder as their ordering is inherited from the Builder; it is not possible to combine builders.
 
 ```yaml
 playlists:

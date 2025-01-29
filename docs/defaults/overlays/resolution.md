@@ -134,7 +134,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Overlay Template Variables** are additional variables shared across the Kometa Overlay Defaults.
 
@@ -155,8 +155,8 @@ work. Any value not specified will use its default value if it has one if not it
 
         | Variable                     | Description & Values                                                                                                                           |
         |:-----------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-        | `use_resolution`             | **Description:** Turns off all Resolution Overlays in the Defaults file.<br>**Values:** `false` to turn off the overlays                       |
-        | `use_edition`                | **Description:** Turns off all Edition Overlays in the Defaults file.<br>**Values:** `false` to turn off the overlays                          |
+        | `use_resolution`             | **Description:** Turns off all Resolution Overlays in the Defaults File.<br>**Values:** `false` to turn off the overlays                       |
+        | `use_edition`                | **Description:** Turns off all Edition Overlays in the Defaults File.<br>**Values:** `false` to turn off the overlays                          |
         | `builder_level`              | **Description:** Choose the Overlay Level.<br>**Values:** `season` or `episode`                                                                |
         | `weight_<<key>>`<sup>1</sup> | **Description:** Controls the weight of the Overlay. Higher numbers have priority. **Only works with Edition keys.**<br>**Values:** Any Number |
 

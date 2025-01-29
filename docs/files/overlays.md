@@ -92,7 +92,7 @@ Overlay Files holds information on how Kometa should create Overlays. There are 
 
 ## Overview
 
-This example is an Overlay file with a basic overlay which is saved in a file called `MyOverlays.yml` within the location mapped as `config` in my setup.
+This example is an Overlay File with a basic overlay which is saved in a file called `MyOverlays.yml` within the location mapped as `config` in my setup.
 
 This specific example will target items in my library with a 4K resolution and will add an overlay with text that says "Direct Play" located at the bottom of the poster in the center.
 
@@ -119,7 +119,7 @@ This specific example will target items in my library with a 4K resolution and w
             resolution: 4K
     ```
 
-    1.  This must appear once and **only once** in any Overlay file
+    1.  This must appear once and **only once** in any Overlay File
     2.  This tells Kometa to use text as the overlay rather than an image
     3.  This is the criteria that Kometa will use to define what should receive the overlay
 

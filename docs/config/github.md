@@ -12,8 +12,8 @@ github:
   token: thisismytoken
 ```
 
-| Attribute          | Allowed Values                                                             | Default |                  Required                  |
-|:-------------------|:---------------------------------------------------------------------------|:--------|:------------------------------------------:|
-| `token`            | GitHub Personal Access Token                                               | N/A     | :fontawesome-solid-circle-check:{ .green } |
+| Attribute          | Allowed Values                | Default |                  Required                  |
+|:-------------------|:------------------------------|:--------|:------------------------------------------:|
+| `token`            | GitHub Personal Access Token. | N/A     | :fontawesome-solid-circle-check:{ .green } |
 
 * The GitHub Personal Access Token can be generated [here](https://github.com/settings/tokens).

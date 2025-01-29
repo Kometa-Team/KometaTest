@@ -16,7 +16,7 @@ This is the simplest way to create Overlays using Kometa.
 
 ## Configurations
 
-To run a default Kometa Overlay file you can simply add it to your `overlay_files` using `default` like so:
+To run a default Kometa Overlay File you can simply add it to your `overlay_files` using `default` like so:
 
 ```yaml
 libraries:
@@ -205,11 +205,11 @@ ratings overlay**
 
 ![](images/ratings_spot.png)
 
-To be able to insert the ratings you want, Kometa operations need to be defined. In this example below, User ratings 
+To be able to insert the ratings you want, Kometa Operations need to be defined. In this example below, User ratings 
 (`#1`) are being filled with Rotten Tomatoes Critics Ratings. Critic ratings (`#2`) are filled with IMDb, and Audience 
 ratings (`#3`) are filled with TMDb.
 
-**mass_*_rating_update** sources can be found here: [operations](../config/operations.md)
+**mass_*_rating_update** sources can be found here: [Operations](../config/operations.md)
 
 ![](images/ratings_operations.png)
 
@@ -237,7 +237,7 @@ libraries:
 Each file has a page on the wiki showing the available `template_variables` for each file. For example the default 
 `default: ratings` has a page [here](overlays/ratings.md).
 
-**In addition to the defined `template_variables` almost all default Overlay files have access to the 
+**In addition to the defined `template_variables` almost all default Overlay Files have access to the 
 [Shared Variables](collection_variables.md).**
 
 ### Custom fonts used in these examples:

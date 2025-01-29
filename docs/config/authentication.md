@@ -10,8 +10,8 @@ The source code for these scripts can be found on the [Trakt-MAL-OAuth Repositor
 
 1.  Enter client ID and secret.
 2.  For Trakt, if you didn't retrieve a PIN yourself less than ten minutes ago, click the button, and enter the PIN in the field.
-3.  For MyAnimeList, click the button to authenticate and get the required "localhost URL"
-4.  Click "Submit"
+3.  For MyAnimeList, click the button to authenticate and get the required "localhost URL".
+4.  Click "Submit".
 5.  Copy and paste the result into your Kometa config.
 
 <iframe src="https://kometa-auth-2cb6c5672416.herokuapp.com/" width="100%" height="700" style="border:0px solid black;"></iframe>

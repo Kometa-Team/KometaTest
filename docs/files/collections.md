@@ -23,7 +23,7 @@ list will be added/removed from the collection in the Plex library.
         sync_mode: sync #(4)!
     ```
 
-    1.  This must appear once and **only once** in any Metadata file
+    1.  This must appear once and **only once** in any Metadata File
     2.  This creates a collection based on tmdb list ID 10, https://www.themoviedb.org/list/10 would also be accepted
     3.  This will sort the items in the Plex collection to be the same as the order in the list
     4.  Syncs the collection to the list, so that if an item is added/removed from the list, the same is done to the 
@@ -100,7 +100,7 @@ Examples of these can be seen here
             collection_order: custom #(3)!
         ```
 
-        1.  This is a Trakt List builder, telling Kometa to build a collection based on the items in this list
+        1.  This is a Trakt List Builder, telling Kometa to build a collection based on the items in this list
         2.  If items are removed from the source list, having sync mode set to `append` means they will not be removed 
         from the collection in Plex. Set this to `sync` if you want the items removed in the collection too
         3.  Sort the collection in the order that it is received from the Trakt list
@@ -117,7 +117,7 @@ Examples of these can be seen here
 
         1.  Sorts the collection in the same order as is received by the source list
         2.  Sends items that are in the source list but are not in your Plex library to Radarr. Replace with 
-        `sonarr_add_missing` for any show-based builder.
+        `sonarr_add_missing` for any show-based Builder.
 
     === "Example 3 - Add labels"
 

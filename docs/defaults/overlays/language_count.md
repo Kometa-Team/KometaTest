@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Audio/Subtitle Language Count Overlay
 
 The `language_count` Default Overlay File is used to create an overlay based on the number of audio/subtitle languages 
@@ -46,7 +50,7 @@ work. Any value not specified will use its default value if it has one if not it
 
 ??? abstract "Variable Lists (click to expand)"
 
-    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults file.
+    * **File-Specific Template Variables** are variables available specifically for this Kometa Defaults File.
 
     * **Overlay Template Variables** are additional variables shared across the Kometa Overlay Defaults.
 
