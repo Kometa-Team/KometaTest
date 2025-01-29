@@ -153,10 +153,10 @@ Whenever I execute Kometa and the Movies library is run, MyOverlays.yml will run
 Overlay Files can utilize the following top-level attributes
 
 | Attribute                            | Description                                                                                                            |
-|:-------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
+| :----------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| [`overlays`](#overlay-attributes)    | contains definitions of Overlays you wish to add to one or more libraries                                              |
 | [`templates`](templates.md)          | contains definitions of templates that can be leveraged by multiple Overlays                                           |
 | [`external_templates`](templates.md) | contains [file blocks](../config/files.md) that point to external templates that can be leveraged by multiple overlays |
-| [`overlays`](#overlay-attributes)    | contains definitions of Overlays you wish to add to one or more libraries                                              |
 
 * Example Files can be found in the [Kometa Community Configs Repository](https://github.com/Kometa-Team/Community-Configs)
 
@@ -201,12 +201,12 @@ To remove all overlays from your library, add the [`remove_overlays` library att
 
 Overlay Files can utilize the following top-level attributes
 
-| Attribute                                               | Description                                                                                                            |
-|:--------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------|
-| [`templates`](templates.md)                             | contains definitions of templates that can be leveraged by multiple overlays                                           |
+| Attribute                            | Description                                                                                                            |
+| :----------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| [`overlays`](#overlay-attributes)    | contains definitions of overlays you wish to add                                                                       |
+| [`queues`](#overlay-queues)          | contains the positional attributes of queues                                                                           |
+| [`templates`](templates.md)          | contains definitions of templates that can be leveraged by multiple overlays                                           |
 | [`external_templates`](templates.md) | contains [file blocks](../config/files.md) that point to external templates that can be leveraged by multiple overlays |
-| [`queues`](#overlay-queues)                             | contains the positional attributes of queues                                                                           |
-| [`overlays`](#overlay-attributes)                       | contains definitions of overlays you wish to add                                                                       |
 
 * `overlays` is required in order to run the Overlay File.
 * Example Overlay Files can be found in the [Kometa Community Configs Repository](https://github.com/Kometa-Team/Community-Configs)
@@ -257,35 +257,35 @@ The below attributes are also available for Overlay files, to give more granular
 
 
 | Attribute                  | Description                                                                                                                                                                                                                                                                         |                  Required                  |
-|:---------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------:|
-| `name`                     | Name of the overlay.                                                                                                                                                                                                                                                                | :fontawesome-solid-circle-check:{ .green } |
-| `file`                     | Local location of the Overlay Image.                                                                                                                                                                                                                                                |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `url`                      | URL of Overlay Image Online.                                                                                                                                                                                                                                                        |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `git`                      | Location in the [Configs Repo](https://github.com/Kometa-Team/Community-Configs) of the Overlay Image.                                                                                                                                                                              |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `repo`                     | Location in the [Custom Repo](../config/settings.md) of the Overlay Image.                                                                                                                                                                                                          |  :fontawesome-solid-circle-xmark:{ .red }  |
+| :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------: |
 | [`group`](#overlay-groups) | Name of the Grouping for this overlay. Only one overlay with the highest weight per group will be applied.<br>**`weight` is required when using `group`**<br>**Values:** group name                                                                                                 |  :fontawesome-solid-circle-xmark:{ .red }  |
 | [`queue`](#overlay-queues) | Name of the Queue for this overlay. Define `queue` positions using the `queues` attribute at the top level of an Overlay File. Overlay with the highest weight is applied to the first position and so on.<br>**`weight` is required when using `queue`**<br>**Values:** queue name |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `weight`                   | Weight of this overlay in its group or queue.<br>**`group` or `queue` is required when using `weight`**<br>**Values:** Integer 0 or greater                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `horizontal_offset`        | Horizontal Offset of this overlay. Can be a %.<br>**`vertical_offset` is required when using `horizontal_offset`**<br>**Value:** Integer 0 or greater or 0%-100%                                                                                                                    |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `horizontal_align`         | Horizontal Alignment of the overlay.<br>**Values:** `left`, `center`, `right`                                                                                                                                                                                                       |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `vertical_offset`          | Vertical Offset of this overlay. Can be a %.<br>**`horizontal_offset` is required when using `vertical_offset`**<br>**Value:** Integer 0 or greater or 0%-100%                                                                                                                      |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `vertical_align`           | Vertical Alignment of the overlay.<br>**Values:** `top`, `center`, `bottom`                                                                                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `font`                     | System Font Filename or path to font file for the Text Overlay.<br>**Value:** System Font Filename or path to font file                                                                                                                                                             |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `font_style`               | Font style for Variable Fonts. Only needed when using a Variable Font.<br>**Value:** Variable Font Style                                                                                                                                                                            |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `font_size`                | Font Size for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                                |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `font_color`               | Font Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                                  |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `stroke_width`             | Font Stroke Width for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                        |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `stroke_color`             | Font Stroke Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                           |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_color`               | Backdrop Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                              |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_width`               | Backdrop Width for the Text Overlay. If `back_width` is not specified the Backdrop Sizes to the text<br>**`back_height` is required when using `back_width`**<br>**Value:** Integer greater than 0                                                                                  |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_height`              | Backdrop Height for the Text Overlay. If `back_height` is not specified the Backdrop Sizes to the text<br>**`back_width` is required when using `back_height`**<br>**Value:** Integer greater than 0                                                                                |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_align`               | Alignment for the Text Overlay inside the backdrop. If `back_align` is not specified the Backdrop Centers the text<br>**`back_width` and `back_height` are required when using `back_align`**<br>**Values:** `left`, `right`, `center`, `top`, `bottom`                             |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_padding`             | Backdrop Padding for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_radius`              | Backdrop Radius for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                          |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_line_color`          | Backdrop Line Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
-| `back_line_width`          | Backdrop Line Width for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                      |  :fontawesome-solid-circle-xmark:{ .red }  |
 | `addon_offset`             | Text Addon Image Offset from the text.<br>**`addon_offset` Only works with text overlays**<br>**Value:** Integer 0 or greater                                                                                                                                                       |  :fontawesome-solid-circle-xmark:{ .red }  |
 | `addon_position`           | Text Addon Image Alignment in relation to the text.<br>**`addon_position` Only works with text overlays**<br>**Values:** `left`, `right`, `top`, `bottom`                                                                                                                           |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_align`               | Alignment for the Text Overlay inside the backdrop. If `back_align` is not specified the Backdrop Centers the text<br>**`back_width` and `back_height` are required when using `back_align`**<br>**Values:** `left`, `right`, `center`, `top`, `bottom`                             |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_color`               | Backdrop Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                              |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_height`              | Backdrop Height for the Text Overlay. If `back_height` is not specified the Backdrop Sizes to the text<br>**`back_width` is required when using `back_height`**<br>**Value:** Integer greater than 0                                                                                |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_line_color`          | Backdrop Line Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_line_width`          | Backdrop Line Width for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                      |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_padding`             | Backdrop Padding for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_radius`              | Backdrop Radius for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                          |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `back_width`               | Backdrop Width for the Text Overlay. If `back_width` is not specified the Backdrop Sizes to the text<br>**`back_height` is required when using `back_width`**<br>**Value:** Integer greater than 0                                                                                  |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `file`                     | Local location of the Overlay Image.                                                                                                                                                                                                                                                |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `font_color`               | Font Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                                  |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `font_size`                | Font Size for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                                |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `font_style`               | Font style for Variable Fonts. Only needed when using a Variable Font.<br>**Value:** Variable Font Style                                                                                                                                                                            |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `font`                     | System Font Filename or path to font file for the Text Overlay.<br>**Value:** System Font Filename or path to font file                                                                                                                                                             |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `git`                      | Location in the [Configs Repo](https://github.com/Kometa-Team/Community-Configs) of the Overlay Image.                                                                                                                                                                              |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `horizontal_align`         | Horizontal Alignment of the overlay.<br>**Values:** `left`, `center`, `right`                                                                                                                                                                                                       |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `horizontal_offset`        | Horizontal Offset of this overlay. Can be a %.<br>**`vertical_offset` is required when using `horizontal_offset`**<br>**Value:** Integer 0 or greater or 0%-100%                                                                                                                    |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `name`                     | Name of the overlay.                                                                                                                                                                                                                                                                | :fontawesome-solid-circle-check:{ .green } |
+| `repo`                     | Location in the [Custom Repo](../config/settings.md) of the Overlay Image.                                                                                                                                                                                                          |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `stroke_color`             | Font Stroke Color for the Text Overlay.<br>**Value:** Color Hex Code in format `#RGB`, `#RGBA`, `#RRGGBB` or `#RRGGBBAA`.                                                                                                                                                           |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `stroke_width`             | Font Stroke Width for the Text Overlay.<br>**Value:** Integer greater than 0                                                                                                                                                                                                        |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `url`                      | URL of Overlay Image Online.                                                                                                                                                                                                                                                        |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `vertical_align`           | Vertical Alignment of the overlay.<br>**Values:** `top`, `center`, `bottom`                                                                                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `vertical_offset`          | Vertical Offset of this overlay. Can be a %.<br>**`horizontal_offset` is required when using `vertical_offset`**<br>**Value:** Integer 0 or greater or 0%-100%                                                                                                                      |  :fontawesome-solid-circle-xmark:{ .red }  |
+| `weight`                   | Weight of this overlay in its group or queue.<br>**`group` or `queue` is required when using `weight`**<br>**Values:** Integer 0 or greater                                                                                                                                         |  :fontawesome-solid-circle-xmark:{ .red }  |
 
 * If `url`, `git`, and `repo` are all not defined then Kometa will look in your `config/overlays` folder for a `.png` file named the same as the `name` attribute.
 
@@ -398,37 +398,37 @@ Each Special Text Variables has multiple modifiers that can be used to format th
 
 ##### Special Rating Text
 
-| Variable                       | Description                             | Item Types                                                                |
-|:-------------------------------|:----------------------------------------|:--------------------------------------------------------------------------|
-| `audience_rating`              | Plex Audience Rating                    | `Movies`, `Shows`, or `Episodes`                                          |
-| `critic_rating`                | Plex Critic Rating                      | `Movies`, `Shows`, or `Episodes`                                          |
-| `user_rating`                  | Plex User Rating                        | `Movies`, `Shows`, `Seasons`, or `Episodes`                               |
-| `tmdb_rating`                  | TMDb Rating                             | `Movies`, `Shows`, `Seasons`, or `Episodes`                               |
-| `imdb_rating`                  | IMDb Rating                             | `Movies`, `Shows`, `Seasons`<sup>1</sup>, or `Episodes`                   |
-| `trakt_rating`                 | Trakt Rating                            | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `trakt_user_rating`            | Trakt User Rating                       | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `omdb_imdb_rating`             | OMDb IMDb Rating                        | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `omdb_metascore_rating`        | OMDb Metascore Rating                   | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `omdb_tomatoes_rating`         | OMDb Rotten Tomatoes Rating             | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `plex_imdb_rating`             | Plex IMDb Rating                        | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `plex_tmdb_rating`             | Plex TMDb Rating                        | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `plex_tomatoes_rating`         | Plex Rotten Tomatoes Rating             | `Movies`, `Shows`, `Seasons`<sup>1</sup>                                  |
-| `plex_tomatoesaudience_rating` | Plex Rotten Tomatoes Audience Rating    | `Movies`, `Shows`, `Seasons`<sup>1</sup>                                  |
-| `mdb_rating`                   | MDBList Rating                          | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_average_rating`           | MDBList Average Rating                  | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_imdb_rating`              | MDBList IMDb Rating                     | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_metacritic_rating`        | MDBList Metacritic Rating               | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_metacriticuser_rating`    | MDBList Metacritic User Rating          | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_trakt_rating`             | MDBList Trakt Rating                    | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_tomatoes_rating`          | MDBList Rotten Tomatoes Rating          | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_tomatoesaudience_rating`  | MDBList Rotten Tomatoes Audience Rating | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_tmdb_rating`              | MDBList TMDb Rating                     | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_letterboxd_rating`        | MDBList Letterboxd Rating               | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `mdb_myanimelist_rating`       | MDBList MyAnimeList Rating              | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup>        |
-| `anidb_rating`                 | AniDB Rating                            | `Movies` or `Shows`                                                       |
-| `anidb_average_rating`         | AniDB Average Rating                    | `Movies` or `Shows`                                                       |
-| `anidb_score_rating`           | AniDB Score Rating                      | `Movies` or `Shows`                                                       |
-| `mal_rating`                   | MyAnimeList Rating                      | `Movies` or `Shows`                                                       |
+| Variable                       | Description                             | Item Types                                                         |
+| :----------------------------- | :-------------------------------------- | :----------------------------------------------------------------- |
+| `anidb_average_rating`         | AniDB Average Rating                    | `Movies` or `Shows`                                                |
+| `anidb_rating`                 | AniDB Rating                            | `Movies` or `Shows`                                                |
+| `anidb_score_rating`           | AniDB Score Rating                      | `Movies` or `Shows`                                                |
+| `audience_rating`              | Plex Audience Rating                    | `Movies`, `Shows`, or `Episodes`                                   |
+| `critic_rating`                | Plex Critic Rating                      | `Movies`, `Shows`, or `Episodes`                                   |
+| `imdb_rating`                  | IMDb Rating                             | `Movies`, `Shows`, `Seasons`<sup>1</sup>, or `Episodes`            |
+| `mal_rating`                   | MyAnimeList Rating                      | `Movies` or `Shows`                                                |
+| `mdb_average_rating`           | MDBList Average Rating                  | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_imdb_rating`              | MDBList IMDb Rating                     | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_letterboxd_rating`        | MDBList Letterboxd Rating               | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_metacritic_rating`        | MDBList Metacritic Rating               | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_metacriticuser_rating`    | MDBList Metacritic User Rating          | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_myanimelist_rating`       | MDBList MyAnimeList Rating              | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_rating`                   | MDBList Rating                          | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_tmdb_rating`              | MDBList TMDb Rating                     | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_tomatoes_rating`          | MDBList Rotten Tomatoes Rating          | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_tomatoesaudience_rating`  | MDBList Rotten Tomatoes Audience Rating | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `mdb_trakt_rating`             | MDBList Trakt Rating                    | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `omdb_imdb_rating`             | OMDb IMDb Rating                        | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `omdb_metascore_rating`        | OMDb Metascore Rating                   | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `omdb_tomatoes_rating`         | OMDb Rotten Tomatoes Rating             | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `plex_imdb_rating`             | Plex IMDb Rating                        | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `plex_tmdb_rating`             | Plex TMDb Rating                        | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `plex_tomatoes_rating`         | Plex Rotten Tomatoes Rating             | `Movies`, `Shows`, `Seasons`<sup>1</sup>                           |
+| `plex_tomatoesaudience_rating` | Plex Rotten Tomatoes Audience Rating    | `Movies`, `Shows`, `Seasons`<sup>1</sup>                           |
+| `tmdb_rating`                  | TMDb Rating                             | `Movies`, `Shows`, `Seasons`, or `Episodes`                        |
+| `trakt_rating`                 | Trakt Rating                            | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `trakt_user_rating`            | Trakt User Rating                       | `Movies`, `Shows`, `Seasons`<sup>1</sup> or `Episodes`<sup>1</sup> |
+| `user_rating`                  | Plex User Rating                        | `Movies`, `Shows`, `Seasons`, or `Episodes`                        |
 
 <sup>1</sup> These services do not store season or episode-level ratings, using these options will allow show ratings to be applied at the season or episode level.
 
@@ -448,13 +448,13 @@ Each Special Text Variables has multiple modifiers that can be used to format th
 ##### Special String Text
 
 | Variable         | Description                | Item Types                                  |
-|:-----------------|:---------------------------|:--------------------------------------------|
-| `title`          | Item's Title               | `Movies`, `Shows`, `Seasons`, or `Episodes` |
-| `show_title`     | Item's Parent Show Title   | `Seasons` or `Episodes`                     |
-| `season_title`   | Item's Parent Season Title | `Episodes`                                  |
-| `original_title` | Item's Original Title      | `Movies` or `Shows`                         |
-| `edition`        | Item's Edition             | `Movies`                                    |
+| :--------------- | :------------------------- | :------------------------------------------ |
 | `content_rating` | Item's Content Rating      | `Movies`, `Shows`, or `Episodes`            |
+| `edition`        | Item's Edition             | `Movies`                                    |
+| `original_title` | Item's Original Title      | `Movies` or `Shows`                         |
+| `season_title`   | Item's Parent Season Title | `Episodes`                                  |
+| `show_title`     | Item's Parent Show Title   | `Seasons` or `Episodes`                     |
+| `title`          | Item's Title               | `Movies`, `Shows`, `Seasons`, or `Episodes` |
 
 ???+ tip "Special String Text Modifiers"
 
@@ -468,10 +468,10 @@ Each Special Text Variables has multiple modifiers that can be used to format th
 ##### Special Number Text
 
 | Variable         | Description                    | Item Types              |
-|:-----------------|:-------------------------------|:------------------------|
+| :--------------- | :----------------------------- | :---------------------- |
 | `episode_count`  | Number of Episodes             | `Shows` or `Seasons`    |
-| `season_number`  | Season Number                  | `Seasons` or `Episodes` |
 | `episode_number` | Episode Number                 | `Episodes`              |
+| `season_number`  | Season Number                  | `Seasons` or `Episodes` |
 | `versions`       | Number of Versions of the Item | `Movies` or `Episodes`  |
 
 ???+ tip "Special Number Text Modifiers"
@@ -488,11 +488,11 @@ Each Special Text Variables has multiple modifiers that can be used to format th
 ##### Other Special Text
 
 | Special Text Variables & Mods                                                                                                                                                                                                                                   | Item Types                                  |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------|
-| `<<runtime>>`: Complete Runtime of the Item in minutes (`150`)<br>`<<runtimeH>>`: Hours in runtime of the Item (`2`)<br>`<<runtimeM>>`: Minutes remaining in the hour in the runtime of the Item (`30`)<br>**Show and Season use average Episode Runtime.**     | `Movies`, `Shows`, `Seasons`, or `Episodes` |
-| `<<total_runtime>>`: Complete combined Runtime of all Episodes/Tracks of the Item in minutes (`150`)<br>`<<total_runtimeH>>`: Hours in total runtime of the Item (`2`)<br>`<<total_runtimeM>>`: Minutes remaining in the hour in the runtime of the Item (`30`) | `Shows`, `Seasons`, `Artists`, or `Albums`  |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------ |
 | `<<bitrate>>`: Bitrate of the first media file for an item.<br>`<<bitrateH>>`: Bitrate of the media file with the highest bitrate<br>`<<bitrateL>>`: Bitrate of the media file with the lowest bitrate                                                          | `Movies` or `Episodes`                      |
 | `<<originally_available>>`: Original Available Date of the Item<br>`<<originally_available[FORMAT]>>`: Original Available Date of the Item in the given format. [Format Options](https://strftime.org/)                                                         | `Movies`, `Shows`, or `Episodes`            |
+| `<<runtime>>`: Complete Runtime of the Item in minutes (`150`)<br>`<<runtimeH>>`: Hours in runtime of the Item (`2`)<br>`<<runtimeM>>`: Minutes remaining in the hour in the runtime of the Item (`30`)<br>**Show and Season use average Episode Runtime.**     | `Movies`, `Shows`, `Seasons`, or `Episodes` |
+| `<<total_runtime>>`: Complete combined Runtime of all Episodes/Tracks of the Item in minutes (`150`)<br>`<<total_runtimeH>>`: Hours in total runtime of the Item (`2`)<br>`<<total_runtimeM>>`: Minutes remaining in the hour in the runtime of the Item (`30`) | `Shows`, `Seasons`, `Artists`, or `Albums`  |
 
 ```yaml
 overlays:
@@ -579,13 +579,13 @@ overlays:
 These are some commonly-used examples of Special Text overlays:
 
 | Special Text                                                      | Example Output     |
-|:------------------------------------------------------------------|--------------------|
+| :---------------------------------------------------------------- | ------------------ |
+| `name: "text(Runtime: <<runtime>>m)"`                             | Runtime: 90m       |
+| `name: "text(Runtime: <<runtimeH>>h <<runtimeM>>m)"`              | Runtime: 1h 30m    |
+| `name: text(Episode <<episode_number>>)`                          | Episode 1          |
 | `name: text(S<<season_number0>>E<<episode_number0>>)`             | S01E01             |
 | `name: text(Season <<season_number>> Episode <<episode_number>>)` | Season 1 Episode 1 |
 | `name: text(Season <<season_number>>)`                            | Season 1           |
-| `name: text(Episode <<episode_number>>)`                          | Episode 1          |
-| `name: "text(Runtime: <<runtime>>m)"`                             | Runtime: 90m       |
-| `name: "text(Runtime: <<runtimeH>>h <<runtimeM>>m)"`              | Runtime: 1h 30m    |
 
 #### Text Addon Images
 
@@ -724,21 +724,21 @@ queues:
 Dynamic Queues build queues based on a set of values. To make a dynamic queue instead of having a list under the queue name you use the settings attribute.
 
 | `settings` Attributes | Description                                                             |
-|:----------------------|:------------------------------------------------------------------------|
-| `default`             | Set [default variables](templates.md/#default).                         |
+| :-------------------- | :---------------------------------------------------------------------- |
 | `conditionals`        | Set [conditional variables](templates.md/#conditionals).                |
+| `default`             | Set [default variables](templates.md/#default).                         |
 | `dynamic_position`    | Dynamic Position Attributes                                             |
 | `overlay_limit`       | Max number of overlays to use.<br>**Value:** Any Integer greater then 0 |
 
 | `dynamic_position` Attributes | Description                                                                                                                                                                     |
-|:------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `initial_vertical_align`      | Controls the initial Vertical Alignment of the overlay queue.<br>**Values:** `top`, `center`, or `bottom`                                                                       |
-| `initial_horizontal_align`    | Controls the initial Horizontal Alignment of the overlay queue.<br>**Values:** `left`, `center`, or `right`                                                                     |
-| `initial_vertical_offset`     | Controls the initial Vertical Offset of this overlay queue. Can be a %.<br>**Values:** Number 0 or greater or 0%-100% [pixels assuming a 1000x1500 image]                       |
-| `initial_horizontal_offset`   | Controls the initial Horizontal Offset of this overlay queue. Can be a %.<br>**Values:** Number 0 or greater or 0%-100% [pixels assuming a 1000x1500 image]                     |
-| `vertical_spacing`            | Controls the vertical spacing between different overlays in the queue.<br>**Values:** Number 0 or greater                                                                       |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `horizontal_spacing`          | Controls the horizontal spacing between different overlays in the queue.<br>**Values:** Number 0 or greater                                                                     |
+| `initial_horizontal_align`    | Controls the initial Horizontal Alignment of the overlay queue.<br>**Values:** `left`, `center`, or `right`                                                                     |
+| `initial_horizontal_offset`   | Controls the initial Horizontal Offset of this overlay queue. Can be a %.<br>**Values:** Number 0 or greater or 0%-100% [pixels assuming a 1000x1500 image]                     |
+| `initial_vertical_align`      | Controls the initial Vertical Alignment of the overlay queue.<br>**Values:** `top`, `center`, or `bottom`                                                                       |
+| `initial_vertical_offset`     | Controls the initial Vertical Offset of this overlay queue. Can be a %.<br>**Values:** Number 0 or greater or 0%-100% [pixels assuming a 1000x1500 image]                       |
 | `surround`                    | Sets the queue so the second queue option is on one side of the original and then the next is on the opposite side.<br>**Values:** `true` to make the queue a surrounded queue. |
+| `vertical_spacing`            | Controls the vertical spacing between different overlays in the queue.<br>**Values:** Number 0 or greater                                                                       |
 
 ```yaml
 queues:
