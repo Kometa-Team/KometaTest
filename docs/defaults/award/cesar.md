@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "César"], ["CODE_NAME", "cesar"], ["LIBRARY_TYPE", "Movie"]]'

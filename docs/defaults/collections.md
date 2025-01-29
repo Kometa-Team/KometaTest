@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Collection Defaults
 
 There are many Default Collection Files built into Kometa itself which offer an easy-to-use and customizable set of 

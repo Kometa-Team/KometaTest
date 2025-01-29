@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # UK Content Rating Collections
 
 The `content_rating_uk` Default Collection File is used to dynamically create collections based on the content ratings 

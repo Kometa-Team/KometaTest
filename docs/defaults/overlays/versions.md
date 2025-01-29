@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Versions Overlay
 
 The `versions` Default Overlay File is used to create an overlay based on if there's multiple versions on each item 

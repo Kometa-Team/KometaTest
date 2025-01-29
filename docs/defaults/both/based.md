@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Based On... Collections
 
 The `based` Default Collection File is used to create collections with items that are based on or inspired by various 

@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Playlists
 
 The `playlist` Default Collection File is used to create playlists based on popular Movie/TV Show universes (such as the

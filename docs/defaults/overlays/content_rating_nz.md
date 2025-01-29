@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Content Rating NZ Overlay
 
 The `content_rating_nz` Default Overlay File is used to create an overlay based on the New Zealand Rating on each item within 

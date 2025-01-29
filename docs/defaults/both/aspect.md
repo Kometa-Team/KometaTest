@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Aspect Ratio Collections
 
 The `aspect` Default Collection File is used to create collections with items that are based on their aspect ratio.

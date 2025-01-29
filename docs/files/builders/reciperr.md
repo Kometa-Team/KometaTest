@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Reciperr Builders
 
 You can find movies using a Reciperr list on [reciperr.com](https://reciperr.com/) (Reciperr). 

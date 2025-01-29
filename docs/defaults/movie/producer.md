@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Producer Collections
 
 The `producer` Default Collection File is used to dynamically create collections based on the most popular producers in 

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Content Rating UK Overlay
 
 The `content_rating_uk` Default Overlay File is used to create an overlay based on the BBFC Age Rating on each item 

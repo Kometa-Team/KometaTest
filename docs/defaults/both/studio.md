@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Studio Collections
 
 The `studio` Default Collection File is used to dynamically create collections based on the studios available in your 

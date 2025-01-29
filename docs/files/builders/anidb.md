@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # AniDB Builders
 
 You can find anime using the features of [AniDB.net](https://anidb.net/) (AniDB).

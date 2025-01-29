@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "Toronto International Film Festival"], ["CODE_NAME", "tiff"], ["LIBRARY_TYPE", "Movie"]]'

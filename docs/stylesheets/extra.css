@@ -48,10 +48,6 @@ table tr td code {
    display: table;
 }
 
-.md-typeset .tabbed-set {
-    padding: 10px;
-}
-
 .md-typeset :not(.linenodiv) > pre {
   border: 1px solid #30363d;
   border-radius: 6px;
@@ -248,6 +244,21 @@ table.dualTable td, table.dualTable th {
     margin: 5px auto;
     font-size: inherit;
 }
+
+.md-typeset .admonition, .md-typeset details {
+    background-color: #282828;
+    border: .075rem solid #575757;
+    border-radius: .2rem;
+    box-shadow: var(--md-shadow-z1);
+    color: var(--md-admonition-fg-color);
+    display: flow-root;
+    font-size: .64rem;
+    margin: 1.5625em 0;
+    padding: 0 .6rem;
+    page-break-inside: avoid;
+    transition: box-shadow 125ms;
+}
+
 .md-typeset .blank > .admonition-title,
 .md-typeset .blank > summary {
     background-color: rgba(43, 155, 70, 0.1);
@@ -453,6 +464,7 @@ details[class="quicklink annotate"] > p .md-annotation span span::before {
     max-width: 75%;
 }
 
+
 .md-tabs__item {
   font-weight: normal;
 }
@@ -517,7 +529,7 @@ details[class="quicklink annotate"] > p .md-annotation span span::before {
 .md-typeset .tabbed-content {
     width: 100%;
     border: 1px solid var(--md-default-fg-color--lightest); /* Adds a border with the specified variable color */
-    border-radius: 6px;
+    border-radius: 0 0 6px 6px;
     padding: 10px;
     box-sizing: border-box;
     background-color: hsl(225deg 3.85% 13.04%);

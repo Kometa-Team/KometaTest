@@ -1,4 +1,8 @@
 # Data sources
+---
+hide:
+  - toc
+---
 
 This page is a reference showing the sources of the data used in the defaults files.
 

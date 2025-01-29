@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "Golden Globes"], ["CODE_NAME", "golden"], ["LIBRARY_TYPE", "Movie, Show"]]'

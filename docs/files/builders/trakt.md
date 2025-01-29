@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Trakt Builders
 
 You can find items using the features of [Trakt.tv](https://trakt.tv/) (Trakt). 

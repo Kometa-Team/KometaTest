@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # MediaStinger Overlay
 
 The `mediastinger` Default Overlay File is used to create an overlay based on if there's an after/during credit scene on

@@ -1,3 +1,8 @@
+---
+hide:
+  - toc
+---
+
 # Overlay Defaults
 
 There are many Default Overlay Files built into Kometa itself which offer an easy-to-use and customizable set of 

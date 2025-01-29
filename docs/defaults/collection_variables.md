@@ -1,3 +1,10 @@
+---
+hide:
+  - toc
+---
+
+# Shared Variables
+
 File paths need to be valid in the context where Kometa is running; this is primarily an issue when running in docker, as Kometa inside the container cannot see host paths.
 
 | Variable                                      | Description & Values                                                                                                                                                                                                                                                                                                                                                                               |

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # MyAnimeList Charts Collections
 
 The `myanimelist` Default Collection File is used to create collections based on MyAnimeList Charts.

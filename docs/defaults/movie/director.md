@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Director Collections
 
 The `director` Default Collection File is used to dynamically create collections based on the most popular directors in 

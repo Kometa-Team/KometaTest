@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # TVDb Builders
 
 You can find items using the features of [TheTVDb.com](https://www.thetvdb.com/) (TVDb).

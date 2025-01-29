@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Seasonal Collections
 
 The `seasonal` Default Collection File is used to dynamically create seasonal collections based on holidays .

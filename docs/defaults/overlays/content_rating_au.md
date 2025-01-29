@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Content Rating AU Overlay
 
 The `content_rating_au` Default Overlay File is used to create an overlay based on the Australia Rating on each item within 

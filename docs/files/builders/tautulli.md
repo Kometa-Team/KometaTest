@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Tautulli Builders
 
 You can find items in your Plex using the features of [Tautulli](https://tautulli.com/).

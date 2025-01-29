@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Basic Charts Collections
 
 The `basic` Default Collection File is used to create collections based on recently released media in your library.

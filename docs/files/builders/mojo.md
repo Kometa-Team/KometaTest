@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # BoxOfficeMojo Builders
 
 You can find items using the lists on [boxofficemojo.com](https://www.boxofficemojo.com/) (BoxOfficeMojo). 

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # IMDb Charts Collections
 
 The `imdb` Default Collection File is used to create collections based on IMDb Charts.

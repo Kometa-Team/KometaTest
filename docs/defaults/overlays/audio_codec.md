@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Audio Codec Overlay
 
 The `audio_codec` Default Overlay File is used to create an overlay based on the audio codec available on each item 

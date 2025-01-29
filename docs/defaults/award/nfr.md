@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "National Film Registry"], ["CODE_NAME", "nfr"], ["LIBRARY_TYPE", "Movie"]]'

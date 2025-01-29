@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Episode Info Overlay
 
 The `episode_info` Default Overlay File is used to create an overlay on the episode title card on the episode numbering 

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Video Format Overlay
 
 The `video_format` Default Overlay File is used to create an overlay based on the video format available on each item

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Streaming Services Overlay
 
 The `streaming` Default Overlay File is used to create an overlay based on the streaming service the file is found on 

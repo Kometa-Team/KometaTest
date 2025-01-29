@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Letterboxd Builders
 
 You can find items using the lists on [Letterboxd.com](https://letterboxd.com/) (Letterboxd). 

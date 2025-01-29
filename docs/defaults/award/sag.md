@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "Screen Actors Guild"], ["CODE_NAME", "sag"], ["LIBRARY_TYPE", "Movie"]]'

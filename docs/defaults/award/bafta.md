@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "British Academy of Film and Television Arts"], ["CODE_NAME", "bafta"], ["LIBRARY_TYPE", "Movie"]]'

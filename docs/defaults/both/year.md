@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Year Collections
 
 The `year` Default Collection File is used to dynamically create collections based on the years available in your 

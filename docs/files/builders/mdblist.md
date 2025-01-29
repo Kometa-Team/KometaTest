@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # MDBList Builders
 
 You can find items using the features of [MDBList.com](https://mdblist.com/) (MDBList).

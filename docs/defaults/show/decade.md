@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Decade Collections
 
 The `decade` Collection File is used to dynamically create collections based on the decades available in your library, 

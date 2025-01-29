@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Universe Collections
 
 The `universe` Default Collection File is used to create collections based on popular Movie universes (such as the 

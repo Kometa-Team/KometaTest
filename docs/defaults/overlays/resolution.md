@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Resolution/Edition Overlay
 
 The `resolution` Default Overlay File is used to create an overlay based on the resolutions and editions available on 

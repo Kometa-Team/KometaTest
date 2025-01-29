@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Status Overlay
 
 The `status` Default Overlay File is used to create an overlay on a show detailing its Current Airing Status for all 

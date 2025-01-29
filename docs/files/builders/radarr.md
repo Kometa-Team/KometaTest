@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Radarr Builders
 
 You can find items in your Plex using the features of [Radarr](https://radarr.video/).

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # NZ Content Rating Collections
 
 The `content_rating_nz` Default Collection File is used to dynamically create collections based on the content ratings 

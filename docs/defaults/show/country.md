@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Country Collections
 
 The `country` Default Collection File is used to dynamically create collections based on the countries available in your library.

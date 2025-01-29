@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Chart Separator Collections
 
 The `separator_chart` Default Collection File is used to create a separator collection for Charts.

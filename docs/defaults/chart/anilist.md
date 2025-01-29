@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Anilist Charts Collections
 
 The `anilist` Default Collection File is used to create collections based on Anilist charts.

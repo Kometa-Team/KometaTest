@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Audio Language Collections
 
 The `audio_language` Default Collection File is used to dynamically create collections based on the audio languages 

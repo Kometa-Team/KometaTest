@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Common Sense Media Content Rating Collections
 
 The `content_rating_cs` Default Collection File is used to dynamically create collections based on the content ratings 

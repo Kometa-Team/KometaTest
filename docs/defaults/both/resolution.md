@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Resolution Collections
 
 The `resolution` Default Collection File is used to dynamically create collections based on the resolutions available in

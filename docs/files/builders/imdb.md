@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # IMDb Builders
 
 You can find items using the features of [IMDb.com](https://www.imdb.com/) (IMDb).

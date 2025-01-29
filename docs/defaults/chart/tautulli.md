@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Tautulli Charts Collections
 
 The `tautulli` Default Collection File is used to create collections based on Tautulli/Plex Charts.

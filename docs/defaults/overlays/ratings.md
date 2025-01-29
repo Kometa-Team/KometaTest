@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Ratings Overlays
 
 The `ratings` Default Overlay File is used to create an overlay based on the Critic Rating, Audience Rating, and User 

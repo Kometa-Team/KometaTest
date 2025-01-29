@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Content Rating DE Overlay
 
 The `content_rating_de` Default Overlay File is used to create an overlay based on the FSK Rating on each item within 

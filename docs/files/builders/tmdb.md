@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # TMDb Builders
 
 You can find items using the features of [TheMovieDb.org](https://www.themoviedb.org/) (TMDb).

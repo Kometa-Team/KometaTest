@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Genre Collections
 
 The `genre` Default Collection File is used to dynamically create collections based on the genres available in your library.

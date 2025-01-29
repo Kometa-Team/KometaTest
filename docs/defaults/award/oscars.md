@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "Academy Awards (Oscars)"], ["CODE_NAME", "oscars"], ["LIBRARY_TYPE", "Movie"]]'

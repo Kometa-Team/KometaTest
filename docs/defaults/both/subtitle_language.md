@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Subtitle Language Collections
 
 The `subtitle_language` Default Collection File is used to dynamically create collections based on the subtitle 

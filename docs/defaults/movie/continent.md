@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Continent Collections
 
 The `continent` Default Collection File is used to dynamically create collections based on the countries within your 

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Sonarr Builders
 
 You can find items in your Plex using the features of [Sonarr](https://sonarr.tv/).

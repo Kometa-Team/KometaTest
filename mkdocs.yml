@@ -104,6 +104,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - admonition
   - attr_list
   - md_in_html
@@ -328,8 +331,7 @@ nav:
       - DEFINITION ATTRIBUTES:
         - Builders:
           - Overview: files/builders/overview.md
-          - Dumb Plex Builders: files/builders/plex.md
-          - Smart Plex Builders: files/builders/smart.md
+          - Plex Builders: files/builders/plex.md
           - TMDb Builders: files/builders/tmdb.md
           - TVDb Builders: files/builders/tvdb.md
           - IMDb Builders: files/builders/imdb.md

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Aspect Overlay
 
 The `aspect` Default Overlay File is used to create an overlay on a show/movie detailing its aspect ratio.

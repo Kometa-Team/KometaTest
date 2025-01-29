@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # AU Content Rating Collections
 
 The `content_rating_au` Default Collection File is used to dynamically create collections based on the content ratings 

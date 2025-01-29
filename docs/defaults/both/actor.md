@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Actor Collections
 
 The `actor` Default Collection File is used to dynamically create collections based on the most popular actors/actresses 

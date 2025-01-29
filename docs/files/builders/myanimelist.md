@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # MyAnimeList Builders
 
 You can find anime using the features of [MyAnimeList.net](https://myanimelist.net/) (MyAnimeList).

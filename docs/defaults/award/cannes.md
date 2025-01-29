@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "Cannes Film"], ["CODE_NAME", "cannes"], ["LIBRARY_TYPE", "Movie"]]'

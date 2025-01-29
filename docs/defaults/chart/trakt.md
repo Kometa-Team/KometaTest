@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Trakt Charts Collections
 
 The `trakt` Default Collection File is used to create collections based on Trakt Charts.

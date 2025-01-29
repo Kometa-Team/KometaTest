@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Collectionless Collection
 
 The `collectionless` Default Collection File is used to create a 

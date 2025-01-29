@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Writer Collections
 
 The `writer` Default Collection File is used to dynamically create collections based on the most popular writers in your 

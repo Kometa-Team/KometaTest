@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Network Collections
 
 The `network` Default Collection File is used to dynamically create collections based on the networks available in your library.

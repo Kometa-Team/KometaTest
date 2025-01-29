@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # US Content Rating Collections
 
 The `content_rating_us` Default Collection File is used to dynamically create collections based on the content ratings 

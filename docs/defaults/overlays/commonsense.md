@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Common Sense Age Rating Overlay
 
 The `commonsense` Default Overlay File is used to create an overlay based on the Common Sense Age Rating on each item 

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Streaming Collections
 
 The `streaming` Default Collection File is used to dynamically create collections based on the streaming Services that 

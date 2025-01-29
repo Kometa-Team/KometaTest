@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # AniList Builders
 
 You can find anime using the features of [AniList.co](https://anilist.co/) (AniList).

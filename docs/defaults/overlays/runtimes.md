@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Runtimes Overlay
 
 The `runtimes` Default Overlay File is used to create an overlay of the movie runtime, episode runtime, or average 

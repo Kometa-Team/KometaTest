@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Direct Play Overlay
 
 The `direct_play` Default Overlay File is used to create an overlay to indicate items that cannot be transcoded and 

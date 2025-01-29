@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # StevenLu Builders
 
 You can find items using StevenLu's Popular Movies list on [StevenLu.com](https://movies.stevenlu.com/) (StevenLu). 

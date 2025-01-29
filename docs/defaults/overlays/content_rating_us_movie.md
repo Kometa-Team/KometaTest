@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Content Rating US Movie Overlay
 
 The `content_rating_us_movie` Default Overlay File is used to create an overlay based on the MPAA Age Rating on each 

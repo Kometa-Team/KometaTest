@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # TMDb Charts Collections
 
 The `tmdb` Default Collection File is used to create collections based on TMDb Charts.

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Studio Overlay
 
 The `studio` Default Overlay File is used to create an overlay based on the show studio on each item within your 

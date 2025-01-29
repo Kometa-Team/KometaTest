@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Other Charts Collections
 
 The `other_chart` Default Collection File is used to create collections based on other Charts.

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Franchise Collections
 
 The `franchise` Default Collection File is used to create collections based on popular TV Show franchises, and can be 

@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # ICheckMovies Builders
 
 You can find items using the lists on [ICheckMovies.com](https://www.icheckmovies.com/) (ICheckMovies). 

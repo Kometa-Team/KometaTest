@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 {%
     include-markdown "./award_1.md"
     replace='[["FULL_NAME", "Berlin International Film Festival"], ["CODE_NAME", "berlinale"], ["LIBRARY_TYPE", "Movie"]]'

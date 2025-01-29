@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Audio/Subtitle Language Flags Overlay
 
 The `languages` Default Overlay File is used to create an overlay of a flag and [ISO 639-1 

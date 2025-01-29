@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # MAL Content Rating Collections
 
 The `content_rating_mal` Default Collection File is used to dynamically create collections based on the content ratings 

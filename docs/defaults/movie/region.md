@@ -1,3 +1,7 @@
+---
+hide:
+  - toc
+---
 # Region Collections
 
 The `region` Default Collection File is used to dynamically create collections based on the countries within your 
